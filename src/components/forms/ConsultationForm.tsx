@@ -7,6 +7,7 @@ import Button from '../common/Button';
 
 export default function ConsultationForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const {
     register,
@@ -16,13 +17,14 @@ export default function ConsultationForm() {
   } = useForm<ConsultationFormData>();
 
   const onSubmit = async (data: ConsultationFormData) => {
+    setError('');
     try {
       await submitConsultationForm(data as unknown as Record<string, string>);
+      setSubmitted(true);
+      reset();
     } catch {
-      // Frontend-only fallback
+      setError('Something went wrong. Please try again later.');
     }
-    setSubmitted(true);
-    reset();
   };
 
   if (submitted) {
@@ -54,7 +56,11 @@ export default function ConsultationForm() {
           <input
             id="consult-name"
             type="text"
-            {...register('name', { required: 'Name is required' })}
+            {...register('name', {
+              required: 'Name is required',
+              minLength: { value: 2, message: 'Name must be at least 2 characters' },
+              maxLength: { value: 100, message: 'Name is too long' },
+            })}
             className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 ${errors.name ? 'border-red-400' : 'border-border'}`}
             placeholder="John Doe"
           />
@@ -81,7 +87,12 @@ export default function ConsultationForm() {
         <input
           id="consult-phone"
           type="tel"
-          {...register('phone', { required: 'Phone is required' })}
+          {...register('phone', {
+            required: 'Phone is required',
+            minLength: { value: 10, message: 'Invalid phone number' },
+            maxLength: { value: 15, message: 'Invalid phone number' },
+            pattern: { value: /^[+\d][\d\s-]{8,14}$/, message: 'Invalid phone number format' },
+          })}
           className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 ${errors.phone ? 'border-red-400' : 'border-border'}`}
           placeholder="99XXXXXXXX"
         />
@@ -129,12 +140,17 @@ export default function ConsultationForm() {
         <textarea
           id="healthGoal"
           rows={3}
-          {...register('healthGoal', { required: 'Please describe your health goal' })}
+          {...register('healthGoal', {
+            required: 'Please describe your health goal',
+            maxLength: { value: 2000, message: 'Description is too long (max 2000 characters)' },
+          })}
           className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none ${errors.healthGoal ? 'border-red-400' : 'border-border'}`}
           placeholder="Describe what you'd like to achieve..."
         />
         {errors.healthGoal && <p className="mt-1 text-sm text-red-500">{errors.healthGoal.message}</p>}
       </div>
+
+      {error && <p className="text-sm text-red-500">{error}</p>}
 
       <Button type="submit" variant="primary" size="lg" disabled={isSubmitting} fullWidth>
         {isSubmitting ? 'Booking...' : 'Book Consultation'}
