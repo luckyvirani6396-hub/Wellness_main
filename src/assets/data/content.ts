@@ -4,7 +4,7 @@ export const stats: Stat[] = [
   { value: 5000, suffix: '+', label: 'Lives Impacted' },
   { value: 10, suffix: '+', label: 'Years Experience' },
   { value: 95, suffix: '%', label: 'Client Satisfaction' },
-  { value: 100, suffix: '+', label: 'Wellness Workshops' },
+  { value: 100, suffix: '+', label: 'Health Workshops' },
 ];
 
 export const coreServices: Service[] = [
@@ -34,8 +34,8 @@ export const coreServices: Service[] = [
   },
   {
     id: 'corporate',
-    title: 'Corporate Wellness',
-    description: 'Comprehensive wellness programs designed for workplace health.',
+    title: 'Corporate Health',
+    description: 'Comprehensive health programs designed for workplace health.',
     icon: 'corporate',
   },
   {
@@ -54,13 +54,13 @@ export const timelineSteps: TimelineStep[] = [
   },
   {
     step: 2,
-    title: 'Wellness Consultation',
+    title: 'Health Consultation',
     description: 'One-on-one session with our certified experts to understand your unique needs.',
   },
   {
     step: 3,
     title: 'Customized Plan',
-    description: 'Personalized nutrition and wellness plan designed specifically for you.',
+    description: 'Personalized nutrition and health plan designed specifically for you.',
   },
   {
     step: 4,
@@ -89,7 +89,7 @@ export const featuredPrograms: Program[] = [
     id: 'mind-body',
     title: 'Balance & Align',
     subtitle: 'Yoga + Meditation',
-    description: 'Harmonize physical and mental wellness through guided yoga, meditation, and breathwork practices.',
+    description: 'Harmonize physical and mental health through guided yoga, meditation, and breathwork practices.',
     duration: '8 WEEKS',
     icon: 'mindfulness',
     features: ['Daily yoga sessions', 'Guided meditations', 'Breathwork training'],
@@ -113,23 +113,23 @@ export const testimonials: Testimonial[] = [
     name: 'Sarah Mitchell',
     role: 'Weight Loss Client',
     rating: 5,
-    feedback: 'Wellness transformed my relationship with food. I lost 15kg in 12 weeks and feel more energetic than ever. The personalized approach made all the difference.',
+    feedback: 'Daystar Pinnacle transformed my relationship with food. I lost 15kg in 12 weeks and feel more energetic than ever. The personalized approach made all the difference.',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '2',
     name: 'James Rodriguez',
-    role: 'Corporate Wellness Participant',
+    role: 'Corporate Health Participant',
     rating: 5,
-    feedback: 'Our team wellness program reduced stress levels significantly. The yoga and nutrition workshops were engaging and practical for busy professionals.',
+    feedback: 'Our team health program reduced stress levels significantly. The yoga and nutrition workshops were engaging and practical for busy professionals.',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '3',
     name: 'Priya Sharma',
-    role: 'PCOS Wellness Client',
+    role: 'PCOS Health Client',
     rating: 5,
-    feedback: 'After years of struggling with PCOS, Wellness helped me understand my body better. My symptoms have improved dramatically with their holistic approach.',
+    feedback: 'After years of struggling with PCOS, Daystar Pinnacle helped me understand my body better. My symptoms have improved dramatically with their holistic approach.',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
   },
   {
@@ -146,7 +146,7 @@ function articleBody(excerpt: string, focus: string): string[] {
   return [
     excerpt,
     focus,
-    'Wellness combines clinical nutrition expertise with practical coaching so you can apply what you learn in everyday life — at home, at work, and on the go.',
+    'Daystar Pinnacle combines clinical nutrition expertise with practical coaching so you can apply what you learn in everyday life — at home, at work, and on the go.',
     'If you have a medical condition or take regular medication, check with your healthcare provider before changing your diet, supplements, or exercise plan.',
   ];
 }
@@ -226,7 +226,7 @@ const blogPostsData: BlogPost[] = [
     id: '6',
     slug: 'building-mental-resilience-daily',
     title: 'Building Mental Resilience Daily',
-    category: 'Mental Wellness',
+    category: 'Mental Health',
     excerpt: 'Practical strategies to strengthen your mental health and emotional well-being.',
     image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop',
     date: 'Jun 3, 2026',
@@ -303,18 +303,18 @@ export const nutritionServices: Service[] = [
   { id: 'wh', title: "Women's Health", description: 'Specialized nutrition for women\'s health needs.', icon: 'women', category: 'nutrition' },
 ];
 
-export const wellnessServices: Service[] = [
-  { id: 'ys', title: 'Yoga Sessions', description: 'Group and private yoga classes for all levels.', icon: 'yoga', category: 'wellness' },
-  { id: 'mp', title: 'Meditation Programs', description: 'Guided meditation for stress relief and focus.', icon: 'meditation', category: 'wellness' },
-  { id: 'sm', title: 'Stress Management', description: 'Techniques to manage and reduce daily stress.', icon: 'stress', category: 'wellness' },
-  { id: 'lc', title: 'Lifestyle Coaching', description: 'Holistic coaching for lasting lifestyle changes.', icon: 'lifestyle', category: 'wellness' },
-  { id: 'so', title: 'Sleep Optimization', description: 'Improve sleep quality through proven strategies.', icon: 'sleep', category: 'wellness' },
+export const healthServices: Service[] = [
+  { id: 'ys', title: 'Yoga Sessions', description: 'Group and private yoga classes for all levels.', icon: 'yoga', category: 'health' },
+  { id: 'mp', title: 'Meditation Programs', description: 'Guided meditation for stress relief and focus.', icon: 'meditation', category: 'health' },
+  { id: 'sm', title: 'Stress Management', description: 'Techniques to manage and reduce daily stress.', icon: 'stress', category: 'health' },
+  { id: 'lc', title: 'Lifestyle Coaching', description: 'Holistic coaching for lasting lifestyle changes.', icon: 'lifestyle', category: 'health' },
+  { id: 'so', title: 'Sleep Optimization', description: 'Improve sleep quality through proven strategies.', icon: 'sleep', category: 'health' },
 ];
 
 export const corporateServices: Service[] = [
-  { id: 'ewp', title: 'Employee Wellness Programs', description: 'Comprehensive wellness initiatives for teams.', icon: 'corporate', category: 'corporate' },
-  { id: 'ws', title: 'Workshops', description: 'Interactive wellness workshops and seminars.', icon: 'workshop', category: 'corporate' },
-  { id: 'mws', title: 'Mental Wellness Sessions', description: 'Mental health support for employees.', icon: 'mental', category: 'corporate' },
+  { id: 'ewp', title: 'Employee Health Programs', description: 'Comprehensive health initiatives for teams.', icon: 'corporate', category: 'corporate' },
+  { id: 'ws', title: 'Workshops', description: 'Interactive health workshops and seminars.', icon: 'workshop', category: 'corporate' },
+  { id: 'mws', title: 'Mental Health Sessions', description: 'Mental health support for employees.', icon: 'mental', category: 'corporate' },
   { id: 'ha', title: 'Health Assessments', description: 'On-site health screenings and evaluations.', icon: 'assessment', category: 'corporate' },
 ];
 
@@ -346,13 +346,13 @@ export const pagePrograms: Program[] = [
     description: 'A 90-day program to reset your nutrition, fitness, sleep, and stress management habits for lasting change.',
     duration: '90 Days',
     icon: 'lifestyle',
-    features: ['Full health audit', 'Custom wellness plan', 'Bi-weekly coaching', 'Habit tracking tools'],
+    features: ['Full health audit', 'Custom health plan', 'Bi-weekly coaching', 'Habit tracking tools'],
     image: '/images/program-reset-new.png',
   },
   {
     id: 'gut-health-journey',
     title: 'Gut Health Journey',
-    subtitle: 'Digestive Wellness',
+    subtitle: 'Digestive Health',
     description: 'A structured 6-week program to heal your gut through targeted nutrition, probiotics, and lifestyle adjustments.',
     duration: '6 Weeks',
     icon: 'gut',
@@ -360,18 +360,18 @@ export const pagePrograms: Program[] = [
     image: '/images/program-gut-new.png',
   },
   {
-    id: 'corporate-wellness',
-    title: 'Corporate Wellness',
+    id: 'corporate-health',
+    title: 'Corporate Health',
     subtitle: 'Team Health Initiative',
-    description: 'Transform your workplace culture with comprehensive employee wellness workshops, screenings, and challenges.',
+    description: 'Transform your workplace culture with comprehensive employee health workshops, screenings, and challenges.',
     duration: 'Custom',
     icon: 'corporate',
-    features: ['On-site health screenings', 'Wellness workshops', 'Fitness challenges', 'Mental health sessions'],
+    features: ['On-site health screenings', 'Health workshops', 'Fitness challenges', 'Mental health sessions'],
     image: '/images/program-corporate-new.png',
   },
   {
-    id: 'womens-wellness',
-    title: "Women's Wellness Circle",
+    id: 'womens-health',
+    title: "Women's Health Circle",
     subtitle: 'Hormonal Harmony',
     description: 'An 8-week supportive group program covering nutrition, hormones, stress, and self-care for women at every life stage.',
     duration: '8 Weeks',
@@ -401,7 +401,7 @@ export const successStories: SuccessStory[] = [
   {
     id: '3',
     name: 'Lisa Anderson',
-    program: 'PCOS Wellness',
+    program: 'PCOS Health',
     beforeImage: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=400&fit=crop',
     afterImage: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=400&fit=crop',
     result: 'Regular cycles restored in 3 months',
@@ -409,10 +409,10 @@ export const successStories: SuccessStory[] = [
 ];
 
 export const whyChooseUs = [
-  { title: 'Certified Experts', description: 'Our team includes certified nutritionists, yoga instructors, and wellness coaches.', icon: 'expert' },
+  { title: 'Certified Experts', description: 'Our team includes certified nutritionists, yoga instructors, and health coaches.', icon: 'expert' },
   { title: 'Personalized Plans', description: 'Every program is tailored to your unique health profile and lifestyle.', icon: 'personalized' },
   { title: 'Science-Based Approach', description: 'All our methods are backed by the latest research and clinical evidence.', icon: 'science' },
-  { title: 'Holistic Wellness Solutions', description: 'We address physical, mental, and emotional well-being together.', icon: 'holistic' },
+  { title: 'Holistic Health Solutions', description: 'We address physical, mental, and emotional well-being together.', icon: 'holistic' },
 ];
 
 export const quizQuestions: QuizQuestion[] = [

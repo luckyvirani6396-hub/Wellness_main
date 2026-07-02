@@ -83,11 +83,11 @@ export default function Testimonials() {
     if (role.toLowerCase().includes('nutrition') || role.toLowerCase().includes('weight')) {
       return 'NUTRITION';
     }
-    if (role.toLowerCase().includes('corporate') || role.toLowerCase().includes('wellness')) {
-      return 'WELLNESS';
+    if (role.toLowerCase().includes('corporate') || role.toLowerCase().includes('wellness') || role.toLowerCase().includes('health')) {
+      return 'HEALTH';
     }
     if (role.toLowerCase().includes('pcos') || role.toLowerCase().includes('holistic')) {
-      return 'WELLNESS';
+      return 'HEALTH';
     }
     return 'NUTRITION';
   };
@@ -144,7 +144,7 @@ export default function Testimonials() {
         <SectionTitle
           subtitle="Testimonials"
           title="What Our Clients Say"
-          description="Real stories from people who transformed their health with Wellness."
+          description="Real stories from people who transformed their health with Daystar Pinnacle."
         />
 
         <div className="relative max-w-6xl mx-auto mt-8 px-4 md:px-8">

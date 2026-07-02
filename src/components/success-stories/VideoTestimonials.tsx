@@ -7,7 +7,7 @@ import { fadeUp, staggerContainer } from '../../utils/animations';
 const videoTestimonials = [
   { id: '1', name: 'Rachel Green', program: 'Weight Transformation', thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop' },
   { id: '2', name: 'Tom Wilson', program: 'Mind & Body Balance', thumbnail: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=250&fit=crop' },
-  { id: '3', name: 'Anita Patel', program: 'PCOS Wellness', thumbnail: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=250&fit=crop' },
+  { id: '3', name: 'Anita Patel', program: 'PCOS Health', thumbnail: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=250&fit=crop' },
 ];
 
 export default function VideoTestimonials() {
@@ -17,7 +17,7 @@ export default function VideoTestimonials() {
         <SectionTitle
           subtitle="Videos"
           title="Video Testimonials"
-          description="Watch our clients share their wellness transformation stories in their own words."
+          description="Watch our clients share their health transformation stories in their own words."
         />
 
         <motion.div

@@ -16,7 +16,7 @@ export default function Programs() {
   const faqs = [
     {
       q: 'Can I switch programs if my goals change?',
-      a: 'Absolutely. We understand that your wellness journey can evolve. Your coach will review your progress and help transition you to the program that aligns best with your new direction.',
+      a: 'Absolutely. We understand that your health journey can evolve. Your coach will review your progress and help transition you to the program that aligns best with your new direction.',
     },
     {
       q: 'Is support one-on-one or in a group?',
@@ -184,7 +184,7 @@ export default function Programs() {
               >
                 <img
                   src={PAGE_HERO_IMAGES.programs}
-                  alt="Yoga and mindfulness wellness group"
+                  alt="Yoga and mindfulness health group"
                   className="w-full h-full object-cover object-[center_35%] transition-transform duration-[4000ms] hover:scale-105"
                 />
               </motion.div>
@@ -427,7 +427,7 @@ export default function Programs() {
           <SectionTitle
             subtitle="FAQ"
             title="Frequently Asked Questions"
-            description="Everything you need to know about starting and succeeding in our wellness programs."
+            description="Everything you need to know about starting and succeeding in our health and nutrition programs."
           />
           <div className="max-w-3xl mx-auto mt-10 bg-white rounded-[32px] border border-[#E2E8E4]/60 p-6 md:p-10 shadow-sm relative z-10">
             {faqs.map((faq, index) => (

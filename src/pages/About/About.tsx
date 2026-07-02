@@ -83,7 +83,7 @@ export default function About() {
                 animate="visible"
                 className="text-xl md:text-2xl font-bold text-[#5c8730] mb-4 leading-snug"
               >
-                Nurturing Wellness. Transforming Lives.
+                Nurturing Health. Transforming Lives.
               </motion.h2>
 
               {/* Description */}
@@ -93,7 +93,7 @@ export default function About() {
                 animate="visible"
                 className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium"
               >
-                We believe in a holistic approach to wellness that nurtures the body, mind, and spirit.
+                We believe in a holistic approach to health that nurtures the body, mind, and spirit.
               </motion.p>
 
               {/* Holistic Badge Flow Grid */}
@@ -132,7 +132,7 @@ export default function About() {
                     <Flower2 className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Natural<br />Wellness
+                    Natural<br />Health
                   </span>
                 </div>
               </motion.div>
@@ -173,7 +173,7 @@ export default function About() {
               >
                 <img
                   src={PAGE_HERO_IMAGES.about || "/images/about-hero-new.png"}
-                  alt="Yoga stretching holistic wellness"
+                  alt="Yoga stretching holistic health"
                   className="w-full h-full object-cover object-[center_35%] transition-transform duration-[4000ms] hover:scale-105"
                 />
               </motion.div>
@@ -208,7 +208,7 @@ export default function About() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Our Vision</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  A world where wellness is a way of life.
+                  A world where health is a way of life.
                 </p>
               </div>
             </div>
@@ -234,7 +234,7 @@ export default function About() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Our Commitment</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  Your wellness is our priority.
+                  Your health is our priority.
                 </p>
               </div>
             </div>
@@ -264,9 +264,9 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <SectionTitle subtitle="Our Story" title="A Journey of Wellness" align="left" />
+              <SectionTitle subtitle="Our Story" title="A Journey of Health" align="left" />
               <p className="text-muted text-[15px] leading-relaxed mb-5 mt-4">
-                Founded over a decade ago, Wellness began with a simple mission: to make expert wellness guidance accessible to everyone. What started as a small nutrition consultancy has grown into a comprehensive wellness platform serving thousands of clients worldwide.
+                Founded over a decade ago, Daystar Pinnacle began with a simple mission: to make expert health guidance accessible to everyone. What started as a small nutrition consultancy has grown into a comprehensive health platform serving thousands of clients worldwide.
               </p>
               <p className="text-muted text-[15px] leading-relaxed mb-8">
                 We focus on promoting physical, mental, and emotional well-being through evidence-based nutrition, mindful movement, and sustainable lifestyle changes. Our team of certified experts works closely with each client to create personalized plans that fit their unique needs and goals.
@@ -274,7 +274,7 @@ export default function About() {
 
               {/* Feature list */}
               <ul className="space-y-3 mb-9">
-                {['Evidence-based nutrition science', 'Personalized wellness roadmaps', 'Ongoing coaching & accountability'].map((item) => (
+                {['Evidence-based nutrition science', 'Personalized health roadmaps', 'Ongoing coaching & accountability'].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-[14.5px] font-medium text-dark">
                     <div className="w-5 h-5 rounded-full bg-[#E8F2EA] flex items-center justify-center shrink-0">
                       <svg viewBox="0 0 24 24" fill="none" stroke="#72A93B" strokeWidth="3.5" className="w-3 h-3">
@@ -306,7 +306,7 @@ export default function About() {
               className="relative grid grid-cols-2 gap-4"
             >
               <div className="col-span-2 rounded-2xl overflow-hidden shadow-lg">
-                <img src="/images/about-trainer.png" alt="Wellness coaching" className="w-full h-[230px] md:h-[260px] object-cover hover:scale-105 transition-transform duration-700 ease-out" />
+                <img src="/images/about-trainer.png" alt="Health coaching" className="w-full h-[230px] md:h-[260px] object-cover hover:scale-105 transition-transform duration-700 ease-out" />
               </div>
               <div className="rounded-2xl overflow-hidden shadow-md">
                 <img src="/images/about-food.png" alt="Healthy nutrition" className="w-full h-[150px] md:h-[170px] object-cover hover:scale-105 transition-transform duration-700 ease-out" />
@@ -330,7 +330,7 @@ export default function About() {
         <div className="absolute left-0 top-1/4 w-[280px] h-[450px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
-          <SectionTitle subtitle="Our Purpose" title="Vision & Mission" description="What drives everything we do at Wellness." />
+          <SectionTitle subtitle="Our Purpose" title="Vision & Mission" description="What drives everything we do at Daystar Pinnacle." />
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {[
@@ -342,7 +342,7 @@ export default function About() {
                   </svg>
                 ),
                 label: 'Our Vision',
-                text: 'Creating healthier and happier communities through holistic wellness. We envision a world where everyone has access to the knowledge and support they need to live their healthiest, most fulfilling lives.',
+                text: 'Creating healthier and happier communities through holistic health. We envision a world where everyone has access to the knowledge and support they need to live their healthiest, most fulfilling lives.',
                 img: '/images/program-mind.png',
               },
               {
@@ -354,7 +354,7 @@ export default function About() {
                   </svg>
                 ),
                 label: 'Our Mission',
-                text: 'Empower individuals with sustainable nutrition and wellness practices. We are committed to providing science-based, personalized guidance that leads to lasting transformation — not quick fixes.',
+                text: 'Empower individuals with sustainable nutrition and health practices. We are committed to providing science-based, personalized guidance that leads to lasting transformation — not quick fixes.',
                 img: '/images/about-yoga.png',
               },
             ].map((item) => (
@@ -392,7 +392,7 @@ export default function About() {
         <div className="absolute right-0 top-1/3 w-[280px] h-[400px] bg-gradient-to-l from-[#E8F2EA]/70 to-transparent rounded-l-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
-          <SectionTitle subtitle="Our Approach" title="How We Help You Thrive" description="Three pillars that form the foundation of every Wellness journey." />
+          <SectionTitle subtitle="Our Approach" title="How We Help You Thrive" description="Three pillars that form the foundation of every health journey." />
 
           <motion.div
             variants={staggerContainer}
@@ -429,7 +429,7 @@ export default function About() {
         <div className="absolute left-0 top-1/4 w-[280px] h-[400px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
-          <SectionTitle subtitle="Why Wellness" title="Why Choose Us" description="What sets us apart in the wellness industry." />
+          <SectionTitle subtitle="Why Daystar Pinnacle" title="Why Choose Us" description="What sets us apart in the health and nutrition industry." />
           <motion.div
             variants={staggerContainer}
             initial="hidden"

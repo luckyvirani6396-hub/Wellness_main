@@ -18,7 +18,7 @@ export default function TransformationCards({ stories }: TransformationCardsProp
         <SectionTitle
           subtitle="Transformations"
           title="Before & After Results"
-          description="Inspiring transformations from clients who committed to their wellness journey."
+          description="Inspiring transformations from clients who committed to their health journey."
         />
 
         <motion.div

@@ -133,7 +133,7 @@ export default function AboutPreview() {
               >
                 <img
                   src="/images/about-trainer.png"
-                  alt={`${SITE_NAME} wellness trainer coaching a client`}
+                  alt={`${SITE_NAME} health trainer coaching a client`}
                   className="w-full h-[340px] sm:h-[440px] lg:h-[500px] object-cover"
                 />
               </div>
@@ -147,7 +147,7 @@ export default function AboutPreview() {
                 </svg>
               </div>
               <p className="text-[14px] font-bold leading-tight tracking-wide">Holistic</p>
-              <p className="text-[14px] font-bold leading-tight tracking-wide mb-1">Wellness</p>
+              <p className="text-[14px] font-bold leading-tight tracking-wide mb-1">Health</p>
               <p className="text-[10px] text-white/50 font-medium">Body • Mind • Spirit</p>
             </div>
 
@@ -228,7 +228,7 @@ export default function AboutPreview() {
 
             {/* Main paragraph */}
             <p className="text-muted leading-relaxed mb-6 text-sm md:text-base">
-              We take a holistic approach to wellness, nurturing the body, mind,
+              We take a holistic approach to health, nurturing the body, mind,
               and spirit — with expert guidance that's personalized, practical,
               and accessible to all.
             </p>
@@ -258,7 +258,7 @@ export default function AboutPreview() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-dark mb-0.5">Certified Experts</h4>
-                  <p className="text-sm text-muted leading-relaxed">Guidance from qualified nutrition & wellness professionals</p>
+                  <p className="text-sm text-muted leading-relaxed">Guidance from qualified nutrition & health professionals</p>
                 </div>
               </div>
 

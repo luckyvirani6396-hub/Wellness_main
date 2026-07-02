@@ -23,9 +23,9 @@ const socialIcons = [
 
 const programs = [
   'Weight Transformation',
-  'PCOS Wellness',
+  'PCOS Health',
   'Diabetes Management',
-  'Corporate Wellness',
+  'Corporate Health',
   'Mind & Body Balance',
 ];
 
@@ -73,7 +73,7 @@ export default function Footer() {
           <div className="lg:col-span-4 flex flex-col">
 
             {/* Logo */}
-            <Logo className="mb-5" />
+            <Logo className="mb-5" light />
 
             {/* Divider underline */}
             <svg className="w-32 h-2.5 text-[#5c8730]/50 mb-5" viewBox="0 0 200 10" fill="currentColor">
@@ -81,7 +81,7 @@ export default function Footer() {
             </svg>
 
             <p className="text-[#b8cfc0] text-[14px] leading-relaxed mb-7 max-w-xs">
-              Empowering individuals with sustainable nutrition and holistic wellness practices for a healthier, happier, and more balanced life.
+              Empowering individuals with sustainable nutrition and holistic health practices for a healthier, happier, and more balanced life.
             </p>
 
             {/* Hours badge */}
@@ -217,7 +217,7 @@ export default function Footer() {
           <p className="text-[#b8cfc0]/50 text-[12px] text-center md:text-left">
             © {new Date().getFullYear()} <span className="text-[#b8cfc0]/70">{SITE_NAME}</span>. All rights reserved.
             <span className="mx-2 text-white/15">|</span>
-            Powered by <span className="text-[#72A93B]/80">DAYSTAR PINNACLE PRIVATE LIMITED</span>.
+            Powered by <span className="text-[#72A93B]/80">Daystar Pinnacle Private Limited</span>.
           </p>
           <div className="flex items-center gap-6 text-[12px] text-[#b8cfc0]/50">
             <a href="#" className="hover:text-[#72A93B] transition-colors duration-300">Privacy Policy</a>

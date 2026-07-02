@@ -26,8 +26,8 @@ export default function AppRoutes() {
           <Route path="services/:slug" element={<ServiceDetail />} />
           <Route path="programs" element={<Programs />} />
           <Route path="faq" element={<FAQ />} />
-          <Route path="wellness-hub" element={<WellnessHub />} />
-          <Route path="wellness-hub/:slug" element={<WellnessArticle />} />
+          <Route path="health-hub" element={<WellnessHub />} />
+          <Route path="health-hub/:slug" element={<WellnessArticle />} />
           <Route path="success-stories" element={<SuccessStories />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

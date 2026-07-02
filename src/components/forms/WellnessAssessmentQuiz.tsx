@@ -11,8 +11,8 @@ function getQuizResult(score: number): QuizResult {
   if (percentage >= 80) {
     return {
       score: percentage,
-      title: 'Excellent Wellness',
-      description: 'You maintain great wellness habits! Keep up the excellent work.',
+      title: 'Excellent Health',
+      description: 'You maintain great health habits! Keep up the excellent work.',
       recommendation: 'Consider our Holistic Lifestyle Reset to optimize your already strong foundation.',
     };
   }
@@ -20,22 +20,22 @@ function getQuizResult(score: number): QuizResult {
     return {
       score: percentage,
       title: 'Good Foundation',
-      description: 'You have a solid wellness foundation with room for improvement.',
-      recommendation: 'Our Mind & Body Balance program can help elevate your wellness routine.',
+      description: 'You have a solid health foundation with room for improvement.',
+      recommendation: 'Our Mind & Body Balance program can help elevate your health routine.',
     };
   }
   if (percentage >= 40) {
     return {
       score: percentage,
       title: 'Needs Attention',
-      description: 'Several areas of your wellness could benefit from focused attention.',
+      description: 'Several areas of your health could benefit from focused attention.',
       recommendation: 'We recommend starting with our Weight Transformation or Nutrition program.',
     };
   }
   return {
     score: percentage,
     title: 'Time for Change',
-    description: 'Your wellness habits need significant improvement for better health outcomes.',
+    description: 'Your health habits need significant improvement for better health outcomes.',
     recommendation: 'Book a free consultation — our experts will create a personalized plan for you.',
   };
 }
@@ -85,10 +85,10 @@ export default function WellnessAssessmentQuiz() {
               <path d="m9 12 2 2 4-4" />
             </svg>
           </div>
-          <h3 className="text-xl md:text-2xl font-extrabold text-dark tracking-tight">Wellness Assessment</h3>
+          <h3 className="text-xl md:text-2xl font-extrabold text-dark tracking-tight">Health Assessment</h3>
         </div>
         <p className="text-muted text-sm md:text-base leading-relaxed">
-          Answer 5 quick questions to assess your current wellness level and receive a personalized recommendation.
+          Answer 5 quick questions to assess your current health level and receive a personalized recommendation.
         </p>
       </div>
 

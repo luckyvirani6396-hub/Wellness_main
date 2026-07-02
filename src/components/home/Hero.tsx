@@ -37,7 +37,7 @@ function HeroResponsive() {
       <div className="absolute inset-0 z-0 select-none -top-5">
         <img
           src="/images/hero.png"
-          alt="WellRise Wellness Path"
+          alt="Daystar Pinnacle Health Path"
           className="w-full h-full object-cover object-[center_12%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/60 via-white/40 to-transparent md:bg-gradient-to-r md:from-white md:via-white/22 md:via-white/15 md:via-white/35 md:to-transparent" />
@@ -70,7 +70,7 @@ function HeroResponsive() {
               >
                 Empower Your <br />
                 <span className="italic font-normal text-[#5c8730] inline-flex items-center gap-2.5">
-                  Wellness Journey
+                  Health Journey
                 </span>
               </motion.h1>
 
@@ -89,7 +89,7 @@ function HeroResponsive() {
                 variants={childVariants}
                 className="text-sm sm:text-base md:text-[16.5px] text-[#2c4033] max-w-lg mb-8 leading-relaxed font-medium"
               >
-                Transform your daily habits and restore natural vitality with personalized wellness coaching, active living, and mindful nutrition.
+                Transform your daily habits and restore natural vitality with personalized health coaching, active living, and mindful nutrition.
               </motion.p>
 
               {/* CTAs */}
@@ -196,7 +196,7 @@ function HeroCanvas({
       <div className="absolute inset-0 z-0 select-none -top-5">
         <img
           src="/images/hero.png"
-          alt="WellRise Wellness Path"
+          alt="Daystar Pinnacle Health Path"
           className="w-full h-full object-cover object-[center_12%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/22 via-white/15 via-white/35 to-transparent" />
@@ -227,7 +227,7 @@ function HeroCanvas({
               >
                 Empower Your <br />
                 <span className="italic font-normal text-[#5c8730] inline-flex items-center gap-2.5">
-                  Wellness Journey
+                  Health Journey
                 </span>
               </motion.h1>
 
@@ -246,7 +246,7 @@ function HeroCanvas({
                 variants={childVariants}
                 className="text-[20.5px] text-[#2c4033] max-w-lg mb-8 leading-relaxed font-medium"
               >
-                Transform your daily habits and restore natural vitality with personalized wellness coaching, active living, and mindful nutrition.
+                Transform your daily habits and restore natural vitality with personalized health coaching, active living, and mindful nutrition.
               </motion.p>
 
               <motion.div variants={childVariants} className="flex flex-wrap items-center gap-4">

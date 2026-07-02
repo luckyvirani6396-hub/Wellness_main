@@ -14,9 +14,9 @@ export default function BlogPreview() {
 
       <Container>
         <SectionTitle
-          subtitle="Wellness Hub"
+          subtitle="Health Hub"
           title="Latest Articles"
-          description="Expert insights and tips to support your wellness journey."
+          description="Expert insights and tips to support your health journey."
         />
         <motion.div
           variants={staggerContainer}
@@ -37,7 +37,7 @@ export default function BlogPreview() {
           className="text-center mt-10"
         >
           <Link
-            to="/wellness-hub"
+            to="/health-hub"
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border-2 border-[#5c8730] text-[#5c8730] hover:bg-[#5c8730] hover:text-white font-bold text-sm transition-all duration-300"
           >
             View All Articles

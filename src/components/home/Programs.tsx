@@ -7,7 +7,7 @@ import { staggerContainer, fadeUp } from '../../utils/animations';
 
 export default function Programs() {
   const handleScrollToAssessment = () => {
-    const element = document.getElementById('wellness-assessment');
+    const element = document.getElementById('health-assessment');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }

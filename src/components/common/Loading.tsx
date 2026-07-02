@@ -63,7 +63,7 @@ export default function Loading() {
         {/* Loading text */}
         <div className="flex flex-col items-center gap-2">
           <p className="font-script text-xl sm:text-2xl text-[#5C8730] leading-none">
-            Nourishing your wellness
+            Nourishing your health
           </p>
           <div className="flex items-center gap-1.5">
             <span className="loader-dot w-1.5 h-1.5 rounded-full bg-[#72A93B]" />

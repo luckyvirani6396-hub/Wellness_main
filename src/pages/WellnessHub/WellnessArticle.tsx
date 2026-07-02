@@ -12,7 +12,7 @@ export default function WellnessArticle() {
   const relatedPosts = slug ? getRelatedBlogPosts(slug) : [];
 
   if (!post) {
-    return <Navigate to="/wellness-hub" replace />;
+    return <Navigate to="/health-hub" replace />;
   }
 
   return (
@@ -26,10 +26,10 @@ export default function WellnessArticle() {
         >
           <div className="flex flex-wrap items-center gap-x-4 gap-y-3 mb-5">
             <Link
-              to="/wellness-hub"
+              to="/health-hub"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-secondary transition-colors"
             >
-              ← Back to Wellness Hub
+              ← Back to Health Hub
             </Link>
             <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
               {post.category}
@@ -78,7 +78,7 @@ export default function WellnessArticle() {
               <Button to="/contact" variant="primary">
                 Book Consultation
               </Button>
-              <Button to="/wellness-hub" variant="outline">
+              <Button to="/health-hub" variant="outline">
                 More Articles
               </Button>
             </div>
@@ -98,7 +98,7 @@ export default function WellnessArticle() {
                   {relatedPosts.map((related) => (
                     <li key={related.id}>
                       <Link
-                        to={`/wellness-hub/${related.slug}`}
+                        to={`/health-hub/${related.slug}`}
                         className="group block rounded-xl -mx-2 px-2 py-2 hover:bg-primary/5 transition-colors"
                       >
                         <p className="text-sm font-medium text-dark group-hover:text-primary transition-colors line-clamp-2 leading-snug">

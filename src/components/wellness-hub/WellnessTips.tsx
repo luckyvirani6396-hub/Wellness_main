@@ -4,7 +4,7 @@ import Container from '../common/Container';
 const tips = [
   {
     title: 'Evidence-Based Content',
-    description: 'Every article is reviewed by certified nutrition and wellness professionals.',
+    description: 'Every article is reviewed by certified nutrition and health professionals.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5.5 h-5.5">
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" strokeLinecap="round" strokeLinejoin="round" />
@@ -25,7 +25,7 @@ const tips = [
   },
   {
     title: 'Holistic Perspective',
-    description: 'Content covering nutrition, movement, sleep, and mental wellness together.',
+    description: 'Content covering nutrition, movement, sleep, and mental health together.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5.5 h-5.5">
         <circle cx="12" cy="12" r="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -36,7 +36,7 @@ const tips = [
   },
   {
     title: 'Always Free to Read',
-    description: 'No paywalls — our wellness knowledge is open to everyone.',
+    description: 'No paywalls — our health knowledge is open to everyone.',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5.5 h-5.5">
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" strokeLinecap="round" strokeLinejoin="round" />
@@ -55,7 +55,7 @@ export default function WellnessTips() {
               Why Read Here
             </span>
             <h2 className="text-3xl md:text-[38px] font-serif font-medium text-[#0e261a] leading-tight">
-              Trusted Wellness <br className="hidden md:inline" />
+              Trusted Health <br className="hidden md:inline" />
               Knowledge Hub
             </h2>
             <p className="text-muted text-sm md:text-base leading-relaxed mt-4 max-w-sm">

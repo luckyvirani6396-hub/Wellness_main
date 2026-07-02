@@ -50,7 +50,7 @@ export const clinicalServices: ClinicalService[] = [
     slug: 'child-and-women-program',
     title: 'Program For Child & Women',
     shortDescription: 'Specialized nutrition for children\'s growth and women\'s unique health needs.',
-    description: 'From picky eating in children to pregnancy, lactation, and menstrual health in women — this program provides life-stage-specific nutrition guidance for optimal growth and wellness.',
+    description: 'From picky eating in children to pregnancy, lactation, and menstrual health in women — this program provides life-stage-specific nutrition guidance for optimal growth and health.',
     icon: 'women',
     benefits: ['Age-appropriate nutrition for children', 'Support during pregnancy & lactation', 'Hormonal balance for women', 'Improved growth and development'],
     includes: ['Pediatric meal planning', 'Women\'s health nutrition', 'Prenatal & postnatal guidance', 'Family meal strategies'],

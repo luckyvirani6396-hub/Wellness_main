@@ -35,7 +35,7 @@ export default function BlogCard({ post, index = 0 }: BlogCardProps) {
       transition={{ delay: index * 0.05 }}
       className="bg-white rounded-[24px] overflow-hidden border border-[#E2E8E4]/60 hover:border-secondary/40 transition-all duration-500 hover:shadow-2xl hover:shadow-secondary/12 group relative flex flex-col h-full"
     >
-      <Link to={`/wellness-hub/${post.slug}`} className="flex flex-col h-full">
+      <Link to={`/health-hub/${post.slug}`} className="flex flex-col h-full">
         <div className="relative overflow-hidden h-56 shrink-0">
           <img
             src={post.image}

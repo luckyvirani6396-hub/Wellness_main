@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX, HiPhone, HiMail, HiClock, HiLocationMarker } from 'react-icons/hi';
 import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
-import { NAV_ITEMS, CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_TEL } from '../../constants';
+import { NAV_ITEMS, CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_TEL, WHATSAPP_NUMBER } from '../../constants';
 import Logo from '../common/Logo';
 import ServicesDropdown, { MobileServicesList } from './ServicesDropdown';
 
@@ -51,7 +51,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 hover:text-[#cce452] transition-colors"
               >
                 <HiMail className="w-3.5 h-3.5 text-[#cce452]" />
-                <span>info@wellrise.com</span>
+                <span>{CONTACT_EMAIL}</span>
               </a>
               <span className="flex items-center gap-2 text-white/70">
                 <HiClock className="w-3.5 h-3.5 text-[#cce452]" />
@@ -155,7 +155,7 @@ export default function Navbar() {
             </button> */}
 
             <a
-              href={`https://wa.me/${CONTACT_PHONE_TEL}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#25D366] hover:scale-110 transition-transform p-1.5 cursor-pointer flex items-center justify-center"
@@ -178,7 +178,7 @@ export default function Navbar() {
           {/* Mobile Menu & WhatsApp Icons */}
           <div className="lg:hidden flex items-center gap-2">
             <a
-              href={`https://wa.me/${CONTACT_PHONE_TEL}`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#25D366] p-2 flex items-center justify-center"

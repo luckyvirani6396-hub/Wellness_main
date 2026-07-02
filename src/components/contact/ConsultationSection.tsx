@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion';
-import { HiLocationMarker } from 'react-icons/hi';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
 import ConsultationForm from '../forms/ConsultationForm';
-import { CONTACT_ADDRESS } from '../../constants';
 import { fadeUp } from '../../utils/animations';
 
 export default function ConsultationSection() {
@@ -19,8 +17,8 @@ export default function ConsultationSection() {
           >
             <SectionTitle
               subtitle="Free Consultation"
-              title="Book a Wellness Consultation"
-              description="Schedule a free 30-minute call with our certified nutritionists and wellness coaches."
+              title="Book a Health Consultation"
+              description="Schedule a free 30-minute call with our certified nutritionists and health coaches."
               align="left"
             />
             <ul className="space-y-4 mt-6">
@@ -65,18 +63,19 @@ export function MapSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="rounded-[24px] overflow-hidden h-80 bg-[#E8F2EA]/40 border border-[#E2E8E4]/60 relative"
+          className="rounded-[24px] overflow-hidden border border-[#E2E8E4]/60 shadow-sm"
+          style={{ height: '450px' }}
         >
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#5c8730]/5 to-[#72A93B]/10">
-            <div className="text-center px-6">
-              <div className="w-14 h-14 rounded-full bg-[#5c8730]/10 flex items-center justify-center mx-auto mb-4">
-                <HiLocationMarker className="w-7 h-7 text-[#5c8730]" />
-              </div>
-              <p className="font-bold text-dark text-lg">Find Us Here</p>
-              <p className="text-muted text-sm mt-2 max-w-md mx-auto leading-relaxed">{CONTACT_ADDRESS}</p>
-              <p className="text-xs text-muted/70 mt-4">Google Maps integration placeholder</p>
-            </div>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7116.851267533604!2d75.79022246886417!3d26.889983765924757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5cbb6782825%3A0xd335fbef952709fb!2sLal%20kothi%20jaipur!5e0!3m2!1sen!2sin!4v1782995687126!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="Our Location - Lal Kothi, Jaipur"
+          />
         </motion.div>
       </Container>
     </section>

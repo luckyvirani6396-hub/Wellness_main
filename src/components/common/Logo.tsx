@@ -5,19 +5,12 @@ import { SITE_NAME } from '../../constants';
 interface LogoProps {
   className?: string;
   linkToHome?: boolean;
-  variant?: 'header' | 'footer';
   light?: boolean;
 }
 
-function LogoMark({
-  className = '',
-}: {
-  className?: string;
-}) {
+function LogoMark({ className = '' }: { className?: string }) {
   return (
-    <span
-      className="inline-flex items-center justify-center shrink-0 bg-transparent"
-    >
+    <span className="inline-flex items-center justify-center shrink-0 bg-transparent">
       <img
         src={logo}
         alt={`${SITE_NAME} logo`}
@@ -31,14 +24,38 @@ function LogoMark({
 export default function Logo({
   className = '',
   linkToHome = true,
+  light = false,
 }: LogoProps) {
 
-  const markSize = 'h-11 sm:h-12 md:h-15 w-auto'
+  const markSize = 'h-10 sm:h-11 md:h-12 w-auto';
 
   const content = (
-    <span className={`inline-flex items-center ${className}`}>
+    <span className={`inline-flex items-center gap-2 ${className}`}>
       <LogoMark className={markSize} />
-      <span className="sr-only">{SITE_NAME}</span>
+      {/* Brand name styled to match official Daystar Pinnacle branding */}
+      <span className="flex flex-col leading-none select-none">
+        <span
+          className="font-bold tracking-tight leading-none"
+          style={{
+            fontFamily: "'Georgia', 'Times New Roman', serif",
+            fontSize: 'clamp(18px, 2vw, 24px)',
+            color: light ? '#ffffff' : '#14435a',
+            letterSpacing: '-0.01em',
+          }}
+        >
+          Daystar
+        </span>
+        <span
+          className="uppercase font-bold tracking-[0.22em] leading-none mt-[3px]"
+          style={{
+            fontFamily: "'Trebuchet MS', 'Arial', sans-serif",
+            fontSize: 'clamp(9px, 1vw, 11px)',
+            color: '#6aaa2e',
+          }}
+        >
+          Pinnacle
+        </span>
+      </span>
     </span>
   );
 
@@ -46,7 +63,7 @@ export default function Logo({
     return (
       <Link
         to="/"
-        className="inline-flex shrink-0 items-center hover:opacity-95 transition-opacity"
+        className="inline-flex shrink-0 items-center hover:opacity-90 transition-opacity"
         aria-label={`${SITE_NAME} home`}
       >
         {content}

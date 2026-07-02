@@ -53,7 +53,7 @@ export default function NewsletterForm({ compact = false }: NewsletterFormProps)
           compact ? 'text-sm mb-5' : 'text-sm md:text-base mb-6 max-w-2xl'
         }`}
       >
-        Get weekly wellness tips and exclusive offers in your inbox.
+        Get weekly health tips and exclusive offers in your inbox.
       </p>
 
       {submitted ? (

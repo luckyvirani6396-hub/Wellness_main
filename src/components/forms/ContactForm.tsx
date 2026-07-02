@@ -103,7 +103,7 @@ export default function ContactForm() {
             <option value="nutrition">Nutrition Guidance</option>
             <option value="stress">Stress Management</option>
             <option value="yoga">Yoga & Meditation</option>
-            <option value="corporate">Corporate Wellness</option>
+            <option value="corporate">Corporate Health</option>
             <option value="other">Other</option>
           </select>
           {errors.goal && <p className="mt-1 text-sm text-red-500">{errors.goal.message}</p>}
@@ -117,7 +117,7 @@ export default function ContactForm() {
           rows={5}
           {...register('message', { required: 'Message is required', minLength: { value: 10, message: 'Message must be at least 10 characters' } })}
           className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none ${errors.message ? 'border-red-400' : 'border-border'}`}
-          placeholder="Tell us about your wellness goals..."
+          placeholder="Tell us about your health goals..."
         />
         {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>}
       </div>

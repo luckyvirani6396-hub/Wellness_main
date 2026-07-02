@@ -4,8 +4,8 @@ import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
 import SectionDecorations from '../common/SectionDecorations';
 import BlogCard from '../common/BlogCard';
-import { WELLNESS_CATEGORIES } from '../../constants';
-import { staggerContainer } from '../../utils/animations';
+import { HEALTH_CATEGORIES } from '../../constants';
+
 
 interface ArticleGridProps {
   posts: BlogPost[];
@@ -26,7 +26,7 @@ export default function ArticleGrid({ posts, activeCategory, onCategoryChange }:
         />
 
         <div className="flex flex-wrap gap-2 mb-12 justify-center">
-          {WELLNESS_CATEGORIES.map((category) => (
+          {HEALTH_CATEGORIES.map((category) => (
             <button
               key={category}
               type="button"
@@ -42,27 +42,20 @@ export default function ArticleGrid({ posts, activeCategory, onCategoryChange }:
           ))}
         </div>
 
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: '-50px' }}
-        >
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeCategory}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {posts.map((post, index) => (
-                <BlogCard key={post.id} post={post} index={index} />
-              ))}
-            </motion.div>
-          </AnimatePresence>
-        </motion.div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeCategory}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            {posts.map((post, index) => (
+              <BlogCard key={post.id} post={post} index={index} />
+            ))}
+          </motion.div>
+        </AnimatePresence>
 
         {posts.length === 0 && (
           <p className="text-center text-muted py-12">No articles found in this category.</p>

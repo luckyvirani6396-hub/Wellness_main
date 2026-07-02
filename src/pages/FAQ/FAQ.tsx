@@ -12,12 +12,12 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: 'What wellness and nutrition programs do you offer?',
+    question: 'What health and nutrition programs do you offer?',
     answer: 'We provide specialized clinical nutrition programs for weight loss, weight gain, PCOS balance, diabetes management, hypothyroidism care, cholesterol management, hypertension support, and women & child health.',
   },
   {
     question: 'Are your meal plans customized for my lifestyle?',
-    answer: 'Yes, absolutely. All meal and wellness plans are engineered around your unique metabolic rate, dietary preferences (vegetarian, vegan, gluten-free, etc.), daily schedule, and specific health goals. We believe in sustainable lifestyle habits, not restrictive diets.',
+    answer: 'Yes, absolutely. All meal and health plans are engineered around your unique metabolic rate, dietary preferences (vegetarian, vegan, gluten-free, etc.), daily schedule, and specific health goals. We believe in sustainable lifestyle habits, not restrictive diets.',
   },
   {
     question: 'How do I start and what is the process?',
@@ -50,7 +50,7 @@ export default function FAQ() {
         title="FAQ"
         description="Have questions about our programs, consulting, or nutritional plans? Find clear answers here."
         image="/images/services-hero.png"
-        imageAlt="Frequently asked questions about wellness"
+        imageAlt="Frequently asked questions about health"
       />
 
       <section className="py-14 md:py-18 bg-white relative overflow-hidden z-10">

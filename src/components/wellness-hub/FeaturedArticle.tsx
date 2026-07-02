@@ -17,7 +17,7 @@ export default function FeaturedArticle({ post }: FeaturedArticleProps) {
         <SectionTitle
           subtitle="Editor's Pick"
           title="Featured Article"
-          description="Our top read this week — handpicked by our wellness experts."
+          description="Our top read this week — handpicked by our health experts."
         />
 
         <motion.article
@@ -73,7 +73,7 @@ export default function FeaturedArticle({ post }: FeaturedArticleProps) {
               </div>
 
               <Link
-                to={`/wellness-hub/${post.slug}`}
+                to={`/health-hub/${post.slug}`}
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#5c8730] hover:bg-[#496b26] text-white font-bold text-sm transition-all duration-300 w-fit shadow-md shadow-[#5c8730]/10 hover:scale-[1.02]"
               >
                 Read Full Article

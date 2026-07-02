@@ -21,12 +21,12 @@ export default function WellnessHubHero() {
               <nav className="flex items-center gap-1.5 text-xs font-extrabold tracking-wider uppercase text-[#004B57]/90">
                 <Link to="/" className="hover:text-[#5c8730] transition-colors duration-200">Home</Link>
                 <span className="text-[#004B57]/30">/</span>
-                <span className="text-[#5C8730]">Wellness Hub</span>
+                <span className="text-[#5C8730]">Health Hub</span>
               </nav>
             </motion.div>
 
             <motion.h1 variants={fadeUp} initial="hidden" animate="visible" className="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-[#153B24] leading-none">
-              Wellness Hub
+              Health Hub
             </motion.h1>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="mb-4 flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function WellnessHubHero() {
             </motion.h2>
 
             <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium">
-              Explore expert articles, nourishing recipes, and practical tips to support your wellness journey — all in one place.
+              Explore expert articles, nourishing recipes, and practical tips to support your health journey — all in one place.
             </motion.p>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="relative flex items-start justify-between w-full max-w-[340px] sm:max-w-[420px] mb-10 px-2">
@@ -88,7 +88,7 @@ export default function WellnessHubHero() {
             >
               <img
                 src={PAGE_HERO_IMAGES.wellnessHub}
-                alt="Meditation and mental wellness"
+                alt="Meditation and mental health"
                 className="w-full h-full object-cover object-[center_35%] transition-transform duration-[4000ms] hover:scale-105"
               />
             </motion.div>
@@ -104,7 +104,7 @@ export default function WellnessHubHero() {
           {[
             { icon: Leaf, title: 'Nutrition Tips', desc: 'Science-backed advice for smarter eating.' },
             { icon: Utensils, title: 'Healthy Recipes', desc: 'Delicious meals that nourish your body.' },
-            { icon: Brain, title: 'Mental Wellness', desc: 'Calm your mind and reduce daily stress.' },
+            { icon: Brain, title: 'Mental Health', desc: 'Calm your mind and reduce daily stress.' },
             { icon: Flower2, title: 'Yoga & Lifestyle', desc: 'Build habits that last a lifetime.' },
           ].map(({ icon: Icon, title, desc }, i) => (
             <div key={title} className={`flex items-center gap-4.5 px-2 ${i > 0 ? 'md:pl-6' : ''}`}>

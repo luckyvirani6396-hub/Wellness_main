@@ -1,7 +1,7 @@
 import type { NavItem } from '../types';
 
-export const SITE_NAME = 'Wellness';
-export const SITE_TAGLINE = 'Personalized Wellness & Nutrition';
+export const SITE_NAME = 'Daystar Pinnacle';
+export const SITE_TAGLINE = 'Personalized Health & Nutrition';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -9,16 +9,16 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Services', path: '/services' },
   { label: 'Programs', path: '/programs' },
   { label: 'FAQ', path: '/faq' },
-  { label: 'Wellness Hub', path: '/wellness-hub' },
+  { label: 'Health Hub', path: '/health-hub' },
   { label: 'Success Stories', path: '/success-stories' },
   { label: 'Contact', path: '/contact' },
 ];
 
-export const WHATSAPP_NUMBER = '919958992616';
-export const CONTACT_EMAIL = 'info@wellness.com';
-export const CONTACT_PHONE = '+91-9******';
-export const CONTACT_PHONE_TEL = '+91-9******';
-export const CONTACT_ADDRESS = 'DAYSTAR PINNACLE PRIVATE LIMITED PLOT NO.46, LAL KOTHI, SATYA VIHAR COLONY, Gandhi Nagar (Jaipur), Jaipur, Jaipur- 302015, Rajasthan';
+export const WHATSAPP_NUMBER = '1204414400';
+export const CONTACT_EMAIL = 'info@daystarpinnacle.in';
+export const CONTACT_PHONE = '0120 - 4414400';
+export const CONTACT_PHONE_TEL = '01204414400';
+export const CONTACT_ADDRESS = 'Daystar Pinnacle Private Limited Plot No.46, Lal Kothi, Satya Vihar Colony, Gandhi Nagar (Jaipur), Jaipur, Jaipur - 302015, Rajasthan';
 
 export const SOCIAL_LINKS = [
   { label: 'Facebook', href: 'https://facebook.com', icon: 'FaFacebook' },
@@ -28,11 +28,11 @@ export const SOCIAL_LINKS = [
   { label: 'WhatsApp', href: `https://wa.me/${WHATSAPP_NUMBER}`, icon: 'FaWhatsapp' },
 ];
 
-export const WELLNESS_CATEGORIES = [
+export const HEALTH_CATEGORIES = [
   'All',
   'Nutrition Tips',
   'Healthy Recipes',
-  'Mental Wellness',
+  'Mental Health',
   'Yoga Practices',
   'Lifestyle Habits',
   'Stress Management',

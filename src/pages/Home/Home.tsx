@@ -105,7 +105,7 @@ export default function Home() {
         <Container>
           <SectionTitle
             subtitle="Tools"
-            title="Wellness Calculators"
+            title="Health Calculators"
             description="Use our free tools to understand your health metrics and get personalized insights."
           />
 
@@ -244,7 +244,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="wellness-assessment" className="space-y-6">
+          <div id="health-assessment" className="space-y-6">
             <WellnessAssessmentQuiz />
             <NewsletterForm />
           </div>

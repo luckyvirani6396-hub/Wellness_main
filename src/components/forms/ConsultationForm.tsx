@@ -125,15 +125,15 @@ export default function ConsultationForm() {
       </div>
 
       <div>
-        <label htmlFor="wellnessGoal" className="block text-sm font-medium text-dark mb-1.5">Wellness Goal *</label>
+        <label htmlFor="healthGoal" className="block text-sm font-medium text-dark mb-1.5">Health Goal *</label>
         <textarea
-          id="wellnessGoal"
+          id="healthGoal"
           rows={3}
-          {...register('wellnessGoal', { required: 'Please describe your wellness goal' })}
-          className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none ${errors.wellnessGoal ? 'border-red-400' : 'border-border'}`}
+          {...register('healthGoal', { required: 'Please describe your health goal' })}
+          className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none ${errors.healthGoal ? 'border-red-400' : 'border-border'}`}
           placeholder="Describe what you'd like to achieve..."
         />
-        {errors.wellnessGoal && <p className="mt-1 text-sm text-red-500">{errors.wellnessGoal.message}</p>}
+        {errors.healthGoal && <p className="mt-1 text-sm text-red-500">{errors.healthGoal.message}</p>}
       </div>
 
       <Button type="submit" variant="primary" size="lg" disabled={isSubmitting} fullWidth>

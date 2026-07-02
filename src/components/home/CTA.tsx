@@ -21,10 +21,10 @@ export default function CTA() {
           </div>
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Start Your Wellness Journey Today
+              Start Your Health Journey Today
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-              Take the first step towards a healthier, happier you. Book a free consultation with our wellness experts.
+              Take the first step towards a healthier, happier you. Book a free consultation with our health experts.
             </p>
             <Button to="/contact" variant="accent" size="lg">
               Book Consultation

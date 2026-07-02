@@ -95,7 +95,7 @@ export default function ContactSection() {
                 </div>
               </div>
               <Button
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I'd like to know more about your wellness programs.`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I'd like to know more about your health programs.`}
                 variant="secondary"
                 fullWidth
                 className="font-bold"

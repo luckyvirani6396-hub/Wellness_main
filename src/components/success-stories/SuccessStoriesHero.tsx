@@ -41,7 +41,7 @@ export default function SuccessStoriesHero() {
             </motion.h2>
 
             <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium">
-              Discover how our clients transformed their health, confidence, and daily lives through personalized wellness programs.
+              Discover how our clients transformed their health, confidence, and daily lives through personalized health and nutrition programs.
             </motion.p>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="relative flex items-start justify-between w-full max-w-[340px] sm:max-w-[420px] mb-10 px-2">
@@ -102,7 +102,7 @@ export default function SuccessStoriesHero() {
             { value: '5000+', label: 'Lives Impacted' },
             { value: '95%', label: 'Client Satisfaction' },
             { value: '10+', label: 'Years Experience' },
-            { value: '100+', label: 'Wellness Workshops' },
+            { value: '100+', label: 'Health Workshops' },
           ].map(({ value, label }, i) => (
             <div key={label} className={`flex flex-col items-center text-center px-2 ${i > 0 ? 'md:pl-6' : ''}`}>
               <span className="text-2xl md:text-3xl font-bold text-[#5c8730]">{value}</span>

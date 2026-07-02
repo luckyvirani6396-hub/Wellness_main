@@ -90,7 +90,7 @@ export interface ConsultationFormData {
   phone: string;
   preferredDate: string;
   preferredTime: string;
-  wellnessGoal: string;
+  healthGoal: string;
 }
 
 export interface NewsletterFormData {
