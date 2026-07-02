@@ -24,7 +24,7 @@ export default function Testimonials() {
         setVisibleCards(1);
       }
     };
-    
+
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -93,7 +93,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-14 md:py-18 bg-[#F8FAF6]/30 relative overflow-hidden z-10">
+    <section className="py-14 md:py-18 relative overflow-hidden z-10">
       {/* Background decorations - Blur Blobs */}
       <div className="absolute left-0 top-1/4 w-[280px] h-[400px] bg-gradient-to-r from-[#E8F2EA]/75 to-transparent rounded-r-full blur-xl -z-10 pointer-events-none" />
       <div className="absolute right-0 bottom-1/4 w-[280px] h-[400px] bg-gradient-to-l from-[#E8F2EA]/75 to-transparent rounded-l-full blur-xl -z-10 pointer-events-none" />
@@ -197,11 +197,10 @@ export default function Testimonials() {
                     className="w-full md:w-1/2 lg:w-1/3 shrink-0 px-4 flex flex-col justify-between"
                   >
                     <div
-                      className={`h-full flex flex-col justify-between rounded-[32px] p-8 relative transition-all duration-500 bg-white ${
-                        isActive
+                      className={`h-full flex flex-col justify-between rounded-[32px] p-8 relative transition-all duration-500 bg-white ${isActive
                           ? '!bg-[#F8FAF6] border-2 border-[#72A93B] shadow-md scale-[1.02]'
                           : 'border border-[#E2E8E4]/60 shadow-sm opacity-95 scale-100 hover:opacity-100 hover:border-[#E2E8E4]/90'
-                      }`}
+                        }`}
                     >
                       {/* Swallow-tail Green Ribbon Quote Flag (Active Card Only) */}
                       {isActive && (
@@ -226,7 +225,7 @@ export default function Testimonials() {
                           )}
                         </div>
                         {/* Feedback text */}
-                        <p className="text-[#5F6B6E] text-[14px] md:text-[15.5px] leading-relaxed font-medium">
+                        <p className="text-[#5F6B6E] text-[14px] md:text-[15.5px] leading-relaxed font-medium text-justify">
                           {testimonial.feedback}
                         </p>
                       </div>
@@ -235,7 +234,7 @@ export default function Testimonials() {
                       <div>
                         {/* Horizontal Divider Line */}
                         <hr className="border-t border-[#E2E8E4]/60 my-6" />
-                        
+
                         <div className="flex items-center gap-4">
                           <img
                             src={testimonial.image}
@@ -266,11 +265,10 @@ export default function Testimonials() {
                 key={i}
                 type="button"
                 onClick={() => handleDotClick(i)}
-                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
-                  i === activeDotIndex
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${i === activeDotIndex
                     ? 'bg-[#72A93B]'
                     : 'bg-[#E2E8E4] hover:bg-[#72A93B]/50'
-                }`}
+                  }`}
                 aria-label={`Go to testimonial ${i + 1}`}
               />
             ))}

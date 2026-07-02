@@ -16,8 +16,8 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const WHATSAPP_NUMBER = '919958992616';
 export const CONTACT_EMAIL = 'info@wellness.com';
-export const CONTACT_PHONE = '+91-9958992616';
-export const CONTACT_PHONE_TEL = '+919958992616';
+export const CONTACT_PHONE = '+91-9******';
+export const CONTACT_PHONE_TEL = '+91-9******';
 export const CONTACT_ADDRESS = 'DAYSTAR PINNACLE PRIVATE LIMITED PLOT NO.46, LAL KOTHI, SATYA VIHAR COLONY, Gandhi Nagar (Jaipur), Jaipur, Jaipur- 302015, Rajasthan';
 
 export const SOCIAL_LINKS = [

@@ -6,7 +6,7 @@ import { allBlogPosts } from '../../assets/data/content';
 import Container from '../../components/common/Container';
 import SectionDecorations from '../../components/common/SectionDecorations';
 import NewsletterForm from '../../components/forms/NewsletterForm';
-import CTA from '../../components/home/CTA';
+
 import WellnessHubHero from '../../components/wellness-hub/WellnessHubHero';
 import HubStatsBar from '../../components/wellness-hub/HubStatsBar';
 import FeaturedArticle from '../../components/wellness-hub/FeaturedArticle';

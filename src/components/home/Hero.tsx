@@ -332,7 +332,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#F8FAF6]"
+      className="relative w-full overflow-hidden"
       style={{ height }}
     >
       <div className="relative mx-auto" style={{ width: scaledWidth, height }}>

@@ -7,7 +7,7 @@ import { fadeUp } from '../../utils/animations';
 
 export default function AboutPreview() {
   return (
-    <section className="py-14 md:py-18 pb-20 md:pb-24 bg-background relative overflow-x-clip">
+    <section className="py-14 md:py-18 pb-20 md:pb-24 relative overflow-x-clip">
       {/* Background leaf shadows / depth-of-field foliage overlays */}
 
       {/* Bottom-left: sharper organic branch */}

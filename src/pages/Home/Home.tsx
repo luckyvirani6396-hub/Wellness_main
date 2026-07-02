@@ -67,7 +67,7 @@ export default function Home() {
       {/* <HowItWorks /> */}
       <Testimonials />
       <BlogPreview />
-      <section className="py-14 md:py-18 bg-gradient-to-b from-background to-white relative overflow-hidden z-10">
+      <section className="py-14 md:py-18 relative overflow-hidden z-10">
         {/* Background decorations - Blur Blobs & Leaf branch drawings */}
         <div className="absolute left-0 top-1/4 w-[280px] h-[450px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl -z-10 pointer-events-none" />
         <div className="absolute right-0 top-1/3 w-[280px] h-[450px] bg-gradient-to-l from-[#E8F2EA]/85 to-transparent rounded-l-full blur-xl -z-10 pointer-events-none" />
@@ -169,8 +169,8 @@ export default function Home() {
                 <button
                   onClick={() => setActiveTab('bmi')}
                   className={`flex-1 py-2.5 sm:py-3.5 text-[10px] sm:text-xs md:text-sm font-extrabold rounded-full uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1 sm:gap-2 cursor-pointer ${activeTab === 'bmi'
-                      ? 'bg-[#003D34] text-white shadow-md'
-                      : 'text-[#5F6B6E] hover:text-[#003D34] hover:bg-[#F8FAF6]'
+                    ? 'bg-[#003D34] text-white shadow-md'
+                    : 'text-[#5F6B6E] hover:text-[#003D34] hover:bg-[#F8FAF6]'
                     }`}
                 >
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0">
@@ -182,8 +182,8 @@ export default function Home() {
                 <button
                   onClick={() => setActiveTab('calorie')}
                   className={`flex-1 py-2.5 sm:py-3.5 text-[10px] sm:text-xs md:text-sm font-extrabold rounded-full uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1 sm:gap-2 cursor-pointer ${activeTab === 'calorie'
-                      ? 'bg-[#003D34] text-white shadow-md'
-                      : 'text-[#5F6B6E] hover:text-[#003D34] hover:bg-[#F8FAF6]'
+                    ? 'bg-[#003D34] text-white shadow-md'
+                    : 'text-[#5F6B6E] hover:text-[#003D34] hover:bg-[#F8FAF6]'
                     }`}
                 >
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0">
@@ -194,8 +194,8 @@ export default function Home() {
                 <button
                   onClick={() => setActiveTab('water')}
                   className={`flex-1 py-2.5 sm:py-3.5 text-[10px] sm:text-xs md:text-sm font-extrabold rounded-full uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-1 sm:gap-2 cursor-pointer ${activeTab === 'water'
-                      ? 'bg-[#003D34] text-white shadow-md'
-                      : 'text-[#5F6B6E] hover:text-[#003D34] hover:bg-[#F8FAF6]'
+                    ? 'bg-[#003D34] text-white shadow-md'
+                    : 'text-[#5F6B6E] hover:text-[#003D34] hover:bg-[#F8FAF6]'
                     }`}
                 >
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0">

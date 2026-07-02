@@ -34,7 +34,7 @@ export default function Programs() {
 
 
   return (
-    <section className="py-14 md:py-18 bg-[#F8FAF6]/30 relative overflow-hidden z-10">
+    <section className="py-14 md:py-18 relative overflow-hidden z-10">
       {/* Background decorations - Blur Blobs & Leaf branch drawings */}
       <div className="absolute left-0 top-1/4 w-[280px] h-[450px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl -z-10 pointer-events-none" />
       <div className="absolute right-0 top-1/3 w-[280px] h-[450px] bg-gradient-to-l from-[#E8F2EA]/85 to-transparent rounded-l-full blur-xl -z-10 pointer-events-none" />
