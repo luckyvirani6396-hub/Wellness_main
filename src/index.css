@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Caveat:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+/* Brand palette — matched to Wellness logo */
+@theme {
+  --color-primary: #004B57;
+  --color-primary-dark: #003840;
+  --color-primary-light: #006575;
+  --color-secondary: #72A93B;
+  --color-secondary-dark: #5C8730;
+  --color-secondary-light: #8BC34A;
+  --color-accent: #F38118;
+  --color-accent-dark: #D96E10;
+  --color-accent-light: #FFA040;
+  --color-background: #F8FAF6;
+  --color-surface: #FFFFFF;
+  --color-dark: #1A2E32;
+  --color-muted: #5F6B6E;
+  --color-border: #E2E8E4;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-script: 'Caveat', cursive;
+  --font-serif: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  html,
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+  color: var(--color-primary-dark);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes loader-orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-pulse-ring {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+
+@keyframes loader-logo-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-4px) scale(1.03);
+  }
+}
+
+@keyframes loader-dot-bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.loader-orbit {
+  animation: loader-orbit-spin 4s linear infinite;
+}
+
+.loader-pulse-ring {
+  animation: loader-pulse-ring 2.4s ease-in-out infinite;
+}
+
+.loader-logo-float {
+  animation: loader-logo-float 2.4s ease-in-out infinite;
+}
+
+.loader-dot {
+  animation: loader-dot-bounce 1.2s ease-in-out infinite;
+}

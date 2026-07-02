@@ -1,0 +1,118 @@
+import type { ClinicalService } from '../../types';
+
+export const clinicalServices: ClinicalService[] = [
+  {
+    id: 'weight-loss',
+    slug: 'weight-loss-program',
+    title: 'Weight Loss Program',
+    shortDescription: 'Sustainable, science-backed weight management tailored to your body and lifestyle.',
+    description: 'Our Weight Loss Program combines personalized nutrition planning, portion guidance, and lifestyle coaching to help you lose weight safely and keep it off. We focus on metabolic health, not crash diets.',
+    icon: 'weight',
+    benefits: ['Healthy, sustainable fat loss', 'Improved energy and metabolism', 'Better body composition', 'Long-term habit building'],
+    includes: ['Custom meal plans', 'Weekly progress reviews', 'Exercise recommendations', 'Mindful eating coaching'],
+    image: '/images/service-weight-loss.png',
+  },
+  {
+    id: 'weight-gain',
+    slug: 'weight-gain-program',
+    title: 'Weight Gain Program',
+    shortDescription: 'Healthy weight gain through balanced nutrition for underweight individuals.',
+    description: 'Designed for those who struggle to gain weight, our program uses calorie-dense, nutrient-rich meal plans and strength-focused nutrition strategies to help you build healthy mass.',
+    icon: 'weight',
+    benefits: ['Healthy weight gain', 'Improved muscle mass', 'Better nutritional status', 'Increased stamina'],
+    includes: ['High-calorie meal plans', 'Nutrient timing guidance', 'Supplement recommendations', 'Bi-weekly check-ins'],
+    image: '/images/service-weight-gain.png',
+  },
+  {
+    id: 'diabetes',
+    slug: 'diabetes-program',
+    title: 'Diabetes Program',
+    shortDescription: 'Blood sugar management through evidence-based nutrition and lifestyle changes.',
+    description: 'Our Diabetes Program helps manage Type 1, Type 2, and prediabetes through glycemic-index-aware meal planning, portion control, and coordinated care with your healthcare provider.',
+    icon: 'diabetes',
+    benefits: ['Stable blood sugar levels', 'Reduced HbA1c', 'Better energy throughout the day', 'Lower complication risk'],
+    includes: ['Glycemic index meal guide', 'Meal timing strategies', 'Blood sugar tracking tools', 'Doctor coordination support'],
+    image: '/images/service-diabetes.png',
+  },
+  {
+    id: 'hypothyroidism',
+    slug: 'hypothyroidism',
+    title: 'Hypothyroidism',
+    shortDescription: 'Nutrition support for thyroid health and metabolic balance.',
+    description: 'Hypothyroidism slows metabolism and affects energy, weight, and mood. Our specialized program addresses iodine, selenium, zinc, and anti-inflammatory nutrition to support thyroid function alongside medical treatment.',
+    icon: 'clinical',
+    benefits: ['Supported thyroid function', 'Improved energy levels', 'Better weight management', 'Reduced inflammation'],
+    includes: ['Thyroid-friendly meal plans', 'Nutrient deficiency assessment', 'Supplement guidance', 'Lifestyle modification plan'],
+    image: '/images/service-thyroid.png',
+  },
+  {
+    id: 'child-women',
+    slug: 'child-and-women-program',
+    title: 'Program For Child & Women',
+    shortDescription: 'Specialized nutrition for children\'s growth and women\'s unique health needs.',
+    description: 'From picky eating in children to pregnancy, lactation, and menstrual health in women — this program provides life-stage-specific nutrition guidance for optimal growth and wellness.',
+    icon: 'women',
+    benefits: ['Age-appropriate nutrition for children', 'Support during pregnancy & lactation', 'Hormonal balance for women', 'Improved growth and development'],
+    includes: ['Pediatric meal planning', 'Women\'s health nutrition', 'Prenatal & postnatal guidance', 'Family meal strategies'],
+    image: '/images/service-child-women.png',
+  },
+  {
+    id: 'cholesterol',
+    slug: 'cholesterol-management',
+    title: 'Cholesterol Management',
+    shortDescription: 'Lower LDL and improve heart health through targeted dietary changes.',
+    description: 'High cholesterol increases cardiovascular risk. Our program uses heart-healthy fats, fiber-rich foods, and plant sterols to naturally improve lipid profiles without sacrificing flavor.',
+    icon: 'clinical',
+    benefits: ['Lower LDL cholesterol', 'Improved HDL levels', 'Better heart health markers', 'Sustainable dietary habits'],
+    includes: ['Heart-healthy meal plans', 'Food swap guides', 'Omega-3 optimization', 'Monthly lipid tracking'],
+    image: '/images/service-heart.png',
+  },
+  {
+    id: 'hypertension',
+    slug: 'hypertension',
+    title: 'Hypertension',
+    shortDescription: 'DASH-inspired nutrition to manage high blood pressure naturally.',
+    description: 'Our Hypertension Program follows DASH diet principles — reducing sodium, increasing potassium-rich foods, and promoting weight management to help control blood pressure alongside medical care.',
+    icon: 'clinical',
+    benefits: ['Lower blood pressure', 'Reduced sodium intake', 'Improved cardiovascular health', 'Better kidney function support'],
+    includes: ['Low-sodium meal plans', 'Potassium-rich food guide', 'Portion control strategies', 'Stress-reduction techniques'],
+  },
+  {
+    id: 'obesity-heart',
+    slug: 'obesity-and-heart-disease',
+    title: 'Obesity And Heart Disease',
+    shortDescription: 'Comprehensive program addressing obesity-related cardiovascular risks.',
+    description: 'Obesity and heart disease are closely linked. This integrated program targets weight reduction, cholesterol management, blood pressure control, and inflammation reduction for comprehensive cardiac protection.',
+    icon: 'weight',
+    benefits: ['Reduced cardiovascular risk', 'Significant weight reduction', 'Improved cardiac markers', 'Enhanced quality of life'],
+    includes: ['Multi-factor meal planning', 'Cardiac risk assessment', 'Exercise progression plan', 'Monthly health reviews'],
+  },
+  {
+    id: 'menopause',
+    slug: 'menopause',
+    title: 'Menopause',
+    shortDescription: 'Nutrition and lifestyle support for navigating menopause with confidence.',
+    description: 'Menopause brings hormonal shifts affecting weight, bone density, and mood. Our program addresses calcium, vitamin D, phytoestrogens, and anti-inflammatory nutrition to ease the transition.',
+    icon: 'women',
+    benefits: ['Reduced menopause symptoms', 'Bone health support', 'Weight management during transition', 'Improved mood and sleep'],
+    includes: ['Hormone-balancing meal plans', 'Bone health nutrition', 'Hot flash dietary strategies', 'Supplement protocols'],
+  },
+  {
+    id: 'pcos',
+    slug: 'pcos',
+    title: 'PCOS',
+    shortDescription: 'Holistic nutrition for PCOS management and hormonal balance.',
+    description: 'PCOS affects insulin resistance, weight, and fertility. Our evidence-based program uses low-GI nutrition, anti-inflammatory foods, and lifestyle modifications to restore hormonal balance.',
+    icon: 'pcos',
+    benefits: ['Improved insulin sensitivity', 'Regular menstrual cycles', 'Weight management', 'Reduced PCOS symptoms'],
+    includes: ['Low-GI meal plans', 'Anti-inflammatory diet guide', 'Supplement recommendations', 'Cycle tracking support'],
+  },
+];
+
+export function getServiceBySlug(slug: string): ClinicalService | undefined {
+  return clinicalServices.find((s) => s.slug === slug);
+}
+
+export function getRelatedServices(slug: string, limit = 3): ClinicalService[] {
+  return clinicalServices.filter((s) => s.slug !== slug).slice(0, limit);
+}
