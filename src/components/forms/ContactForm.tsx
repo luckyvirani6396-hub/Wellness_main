@@ -23,8 +23,7 @@ export default function ContactForm() {
       setSubmitted(true);
       reset();
     } catch {
-      setSubmitted(true);
-      reset();
+      setError('Something went wrong. Please try again later.');
     }
   };
 
@@ -57,7 +56,11 @@ export default function ContactForm() {
           <input
             id="name"
             type="text"
-            {...register('name', { required: 'Name is required', minLength: { value: 2, message: 'Name must be at least 2 characters' } })}
+            {...register('name', {
+              required: 'Name is required',
+              minLength: { value: 2, message: 'Name must be at least 2 characters' },
+              maxLength: { value: 100, message: 'Name is too long' },
+            })}
             className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 ${errors.name ? 'border-red-400' : 'border-border'}`}
             placeholder="John Doe"
           />
@@ -85,7 +88,12 @@ export default function ContactForm() {
           <input
             id="phone"
             type="tel"
-            {...register('phone', { required: 'Phone is required', minLength: { value: 10, message: 'Invalid phone number' } })}
+            {...register('phone', {
+              required: 'Phone is required',
+              minLength: { value: 10, message: 'Invalid phone number' },
+              maxLength: { value: 15, message: 'Invalid phone number' },
+              pattern: { value: /^[+\d][\d\s-]{8,14}$/, message: 'Invalid phone number format' },
+            })}
             className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 ${errors.phone ? 'border-red-400' : 'border-border'}`}
             placeholder="99XXXXXXXX"
           />
@@ -115,7 +123,11 @@ export default function ContactForm() {
         <textarea
           id="message"
           rows={5}
-          {...register('message', { required: 'Message is required', minLength: { value: 10, message: 'Message must be at least 10 characters' } })}
+          {...register('message', {
+            required: 'Message is required',
+            minLength: { value: 10, message: 'Message must be at least 10 characters' },
+            maxLength: { value: 2000, message: 'Message is too long (max 2000 characters)' },
+          })}
           className={`w-full px-4 py-3 rounded-xl border bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 resize-none ${errors.message ? 'border-red-400' : 'border-border'}`}
           placeholder="Tell us about your health goals..."
         />

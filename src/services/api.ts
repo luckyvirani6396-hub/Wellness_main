@@ -9,7 +9,9 @@ const api = axios.create({
 api.interceptors.response.use(
   (response) => response,
   (error) => {
-    console.error('API Error:', error.message);
+    if (import.meta.env.DEV) {
+      console.error('API Error:', error.message);
+    }
     return Promise.reject(error);
   },
 );
