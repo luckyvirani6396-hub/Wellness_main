@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Container from '../common/Container';
+import UnderlineDivider from '../common/UnderlineDivider';
 import { Home } from 'lucide-react';
 
 interface PageHeroProps {
@@ -74,11 +75,8 @@ export default function PageHero({
             {title}
           </h1>
 
-          {/* Custom Hand-drawn Underline Divider SVG */}
           <div className="mb-4 flex">
-            <svg className="w-36 h-2 text-[#5c8730]/75" viewBox="0 0 300 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 5C50 2 150 2 299 5C150 7 50 7 1 5Z" />
-            </svg>
+            <UnderlineDivider className="w-36 h-2 text-[#5c8730]/75" />
           </div>
 
           {/* Description */}

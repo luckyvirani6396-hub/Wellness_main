@@ -4,6 +4,7 @@ import { Leaf, ArrowRight, Check } from 'lucide-react';
 import type { ClinicalService } from '../../types';
 import Container from '../common/Container';
 import ServiceIcon from '../common/ServiceIcon';
+import UnderlineDivider from '../common/UnderlineDivider';
 import { getServiceHeroImage } from '../../constants/pageImages';
 import { fadeUp } from '../../utils/animations';
 
@@ -55,9 +56,7 @@ export default function ServiceDetailHero({ service }: ServiceDetailHeroProps) {
             </motion.h1>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="mb-4 flex items-center gap-2">
-              <svg className="w-40 h-2.5 text-[#5c8730]/75" viewBox="0 0 300 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 5C50 2 150 2 299 5C150 7 50 7 1 5Z" />
-              </svg>
+              <UnderlineDivider />
               <Leaf className="w-4.5 h-4.5 text-[#8cb95d] transform rotate-12 shrink-0" />
             </motion.div>
 

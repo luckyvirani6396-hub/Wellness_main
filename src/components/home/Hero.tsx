@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Users, Award, Leaf } from 'lucide-react';
+import UnderlineDivider from '../common/UnderlineDivider';
 import {
   useHeroScale,
   HERO_DESIGN_WIDTH,
@@ -74,14 +75,11 @@ function HeroResponsive() {
                 </span>
               </motion.h1>
 
-              {/* Hand-drawn Underline Divider Stroke */}
               <motion.div
                 variants={childVariants}
                 className="mb-6 flex"
               >
-                <svg className="w-48 h-2.5 text-[#5c8730]/75" viewBox="0 0 300 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 5C50 2 150 2 299 5C150 7 50 7 1 5Z" />
-                </svg>
+                <UnderlineDivider className="w-48 h-2.5 text-[#5c8730]/75" />
               </motion.div>
 
               {/* Description */}
@@ -232,14 +230,7 @@ function HeroCanvas({
               </motion.h1>
 
               <motion.div variants={childVariants} className="mb-6 flex">
-                <svg
-                  className="w-48 h-2.5 text-[#5c8730]/75"
-                  viewBox="0 0 300 10"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M1 5C50 2 150 2 299 5C150 7 50 7 1 5Z" />
-                </svg>
+                <UnderlineDivider className="w-48 h-2.5 text-[#5c8730]/75" />
               </motion.div>
 
               <motion.p
