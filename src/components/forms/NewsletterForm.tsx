@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import type { NewsletterFormData } from '../../types';
-import { subscribeNewsletter } from '../../services/api';
+import { subscribeNewsletter, getErrorMessage } from '../../services/api';
 import Button from '../common/Button';
 
 interface NewsletterFormProps {
@@ -11,17 +11,19 @@ interface NewsletterFormProps {
 
 export default function NewsletterForm({ compact = false }: NewsletterFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<NewsletterFormData>();
 
   const onSubmit = async (data: NewsletterFormData) => {
+    setSubmitError('');
     try {
       await subscribeNewsletter(data.email);
-    } catch {
-      // Frontend-only fallback
+      setSubmitted(true);
+      reset();
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (error: unknown) {
+      setSubmitError(getErrorMessage(error));
     }
-    setSubmitted(true);
-    reset();
-    setTimeout(() => setSubmitted(false), 5000);
   };
 
   return (
@@ -90,6 +92,9 @@ export default function NewsletterForm({ compact = false }: NewsletterFormProps)
           </div>
           {errors.email && (
             <p className="mt-2 text-xs text-red-500">{errors.email.message}</p>
+          )}
+          {submitError && (
+            <p className="mt-2 text-xs text-red-500">{submitError}</p>
           )}
         </form>
       )}

@@ -26,4 +26,20 @@ export const subscribeNewsletter = async (email: string) => {
   return api.post('/newsletter', { email });
 };
 
+export function getErrorMessage(error: unknown): string {
+  if (axios.isAxiosError(error)) {
+    if (error.response?.data?.message) {
+      return error.response.data.message as string;
+    }
+    if (error.code === 'ECONNABORTED') {
+      return 'Request timed out. Please try again.';
+    }
+    if (!error.response) {
+      return 'Unable to reach the server. Please check your connection and try again.';
+    }
+    return `Something went wrong (${error.response.status}). Please try again.`;
+  }
+  return 'An unexpected error occurred. Please try again.';
+}
+
 export default api;

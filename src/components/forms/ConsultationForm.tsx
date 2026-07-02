@@ -2,11 +2,12 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import type { ConsultationFormData } from '../../types';
-import { submitConsultationForm } from '../../services/api';
+import { submitConsultationForm, getErrorMessage } from '../../services/api';
 import Button from '../common/Button';
 
 export default function ConsultationForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const {
     register,
@@ -16,13 +17,14 @@ export default function ConsultationForm() {
   } = useForm<ConsultationFormData>();
 
   const onSubmit = async (data: ConsultationFormData) => {
+    setSubmitError('');
     try {
       await submitConsultationForm(data as unknown as Record<string, string>);
-    } catch {
-      // Frontend-only fallback
+      setSubmitted(true);
+      reset();
+    } catch (error: unknown) {
+      setSubmitError(getErrorMessage(error));
     }
-    setSubmitted(true);
-    reset();
   };
 
   if (submitted) {
@@ -135,6 +137,8 @@ export default function ConsultationForm() {
         />
         {errors.wellnessGoal && <p className="mt-1 text-sm text-red-500">{errors.wellnessGoal.message}</p>}
       </div>
+
+      {submitError && <p className="text-sm text-red-500">{submitError}</p>}
 
       <Button type="submit" variant="primary" size="lg" disabled={isSubmitting} fullWidth>
         {isSubmitting ? 'Booking...' : 'Book Consultation'}
