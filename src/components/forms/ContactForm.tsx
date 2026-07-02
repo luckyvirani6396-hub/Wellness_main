@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import type { ContactFormData } from '../../types';
-import { submitContactForm } from '../../services/api';
+import { submitContactForm, getErrorMessage } from '../../services/api';
 import Button from '../common/Button';
 
 export default function ContactForm() {
@@ -22,9 +22,8 @@ export default function ContactForm() {
       await submitContactForm(data as unknown as Record<string, string>);
       setSubmitted(true);
       reset();
-    } catch {
-      setSubmitted(true);
-      reset();
+    } catch (err: unknown) {
+      setError(getErrorMessage(err));
     }
   };
 
