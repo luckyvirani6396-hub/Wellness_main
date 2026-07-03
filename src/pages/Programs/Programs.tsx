@@ -257,7 +257,7 @@ export default function Programs() {
       </section>
 
       {/* ── Programs List Section ─────────────────────────── */}
-      <section id="programs-list" className="py-20 md:py-28 relative z-10 bg-white">
+      <section id="programs-list" className="py-14 md:py-18  relative z-10">
         <Container>
           <SectionTitle
             subtitle="Enroll Today"
@@ -289,7 +289,7 @@ export default function Programs() {
       </section>
 
       {/* ── What's Included Section ─────────────────────────── */}
-      <section className="py-20 md:py-28 relative overflow-hidden bg-[#F8FAF6]/40 z-10">
+      <section className="py-14 md:py-18 relative overflow-hidden z-10">
         {/* Background decorations - Blur Blobs & Leaf outlines */}
         <div className="absolute left-0 top-1/4 w-[280px] h-[450px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl -z-10 pointer-events-none" />
         <div className="absolute right-0 top-1/3 w-[280px] h-[450px] bg-gradient-to-l from-[#E8F2EA]/85 to-transparent rounded-l-full blur-xl -z-10 pointer-events-none" />
@@ -362,7 +362,7 @@ export default function Programs() {
       </section>
 
       {/* ── Process Timeline Section ─────────────────────────── */}
-      <section className="py-20 md:py-28 bg-white relative overflow-hidden z-10">
+      <section className="py-14 md:py-18 relative overflow-hidden z-10">
         {/* Decorative background dotted path */}
         <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[900px] h-[200px] pointer-events-none opacity-20">
           <svg className="w-full h-full" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -420,7 +420,7 @@ export default function Programs() {
       </section>
 
       {/* ── FAQ Section ─────────────────────────── */}
-      <section className="py-20 md:py-28 bg-[#F8FAF6]/30 relative overflow-hidden z-10">
+      <section className="py-14 md:py-18 relative overflow-hidden z-10">
         {/* Background blobs */}
         <div className="absolute right-0 top-1/4 w-[280px] h-[400px] bg-gradient-to-l from-[#E8F2EA]/75 to-transparent rounded-l-full blur-xl -z-10 pointer-events-none" />
 
@@ -466,7 +466,7 @@ export default function Programs() {
       </section>
 
       {/* ── Newsletter ────────────────────────────── */}
-      <section className="py-14 md:py-18 pb-20 md:pb-24 bg-white relative overflow-hidden">
+      <section className="py-14 md:py-18 relative overflow-hidden">
         <div className="absolute left-0 top-1/4 w-[220px] h-[350px] bg-gradient-to-r from-[#E8F2EA]/70 to-transparent rounded-r-full blur-xl pointer-events-none" />
         <Container className="relative z-10">
           <NewsletterForm />

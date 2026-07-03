@@ -19,7 +19,7 @@ export default function SuccessStories() {
       <VideoTestimonials />
 
       {/* CTA Banner */}
-      <section className="py-14 md:py-18 relative overflow-hidden z-10 bg-[#F8FAF6]/30">
+      <section className="py-14 md:py-18 relative overflow-hidden z-10">
         <SectionDecorations />
         <Container>
           <motion.div

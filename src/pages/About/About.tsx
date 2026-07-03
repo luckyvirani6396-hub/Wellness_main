@@ -250,7 +250,7 @@ export default function About() {
       </section>
 
       {/* ── Our Story ─────────────────────────────── */}
-      <section className="pt-24 pb-14 md:pt-32 md:pb-18 pb-20 md:pb-24 bg-white relative overflow-hidden">
+      <section className="py-14 md:py-18  relative overflow-hidden">
         <div className="absolute right-0 top-1/4 w-[300px] h-[450px] bg-gradient-to-l from-[#E8F2EA]/85 to-transparent rounded-l-full blur-2xl pointer-events-none" />
 
 
@@ -326,7 +326,7 @@ export default function About() {
       </section>
 
       {/* ── Vision & Mission ──────────────────────── */}
-      <section className="py-14 md:py-18 pb-20 md:pb-24 bg-gradient-to-b from-[#f6faf7] to-white relative overflow-hidden">
+      <section className="py-14 md:py-18 relative overflow-hidden">
         <div className="absolute left-0 top-1/4 w-[280px] h-[450px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
@@ -388,7 +388,7 @@ export default function About() {
       </section>
 
       {/* ── Approach Strip (3 pillars with images) ─── */}
-      <section className="py-14 md:py-18 pb-20 md:pb-24 bg-white relative overflow-hidden">
+      <section className="py-14 md:py-18   relative overflow-hidden">
         <div className="absolute right-0 top-1/3 w-[280px] h-[400px] bg-gradient-to-l from-[#E8F2EA]/70 to-transparent rounded-l-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
@@ -425,7 +425,7 @@ export default function About() {
       </section>
 
       {/* ── Why Choose Us ─────────────────────────── */}
-      <section className="py-14 md:py-18 pb-20 md:pb-24 bg-gradient-to-b from-[#f6faf7] to-white relative overflow-hidden">
+      <section className="py-14 md:py-18  relative overflow-hidden">
         <div className="absolute left-0 top-1/4 w-[280px] h-[400px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
@@ -456,7 +456,7 @@ export default function About() {
       </section>
 
       {/* ── Newsletter ────────────────────────────── */}
-      <section className="py-14 md:py-18 pb-20 md:pb-24 bg-white relative overflow-hidden">
+      <section className="py-14 md:py-18  relative overflow-hidden">
         <div className="absolute left-0 top-1/4 w-[220px] h-[350px] bg-gradient-to-r from-[#E8F2EA]/70 to-transparent rounded-r-full blur-xl pointer-events-none" />
         <Container className="relative z-10">
           <NewsletterForm />

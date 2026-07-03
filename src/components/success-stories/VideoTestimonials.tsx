@@ -12,7 +12,7 @@ const videoTestimonials = [
 
 export default function VideoTestimonials() {
   return (
-    <section className="py-14 md:py-18 bg-white relative overflow-hidden">
+    <section className="py-14 md:py-18 relative overflow-hidden">
       <Container>
         <SectionTitle
           subtitle="Videos"

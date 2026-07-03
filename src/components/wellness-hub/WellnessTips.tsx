@@ -47,7 +47,7 @@ const tips = [
 
 export default function WellnessTips() {
   return (
-    <section className="py-14 md:py-18 relative z-20 bg-white">
+    <section className="py-14 md:py-18 relative z-20">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 items-center">
           <div className="lg:col-span-4 flex flex-col items-start">

@@ -12,7 +12,7 @@ interface FeaturedArticleProps {
 
 export default function FeaturedArticle({ post }: FeaturedArticleProps) {
   return (
-    <section id="featured" className="py-14 md:py-18 bg-white relative overflow-hidden">
+    <section id="featured" className="py-14 md:py-18 relative overflow-hidden">
       <Container>
         <SectionTitle
           subtitle="Editor's Pick"

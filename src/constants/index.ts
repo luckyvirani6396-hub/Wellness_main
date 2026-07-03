@@ -25,8 +25,9 @@ export const CONTACT_ADDRESS = `${COMPANY_NAME} ${STREET_ADDRESS}`;
 export const SOCIAL_LINKS = [
   { label: 'Facebook', href: 'https://facebook.com', icon: 'FaFacebook' },
   { label: 'Instagram', href: 'https://instagram.com', icon: 'FaInstagram' },
-  { label: 'Twitter', href: 'https://twitter.com', icon: 'FaTwitter' },
+  { label: 'X (Twitter)', href: 'https://twitter.com', icon: 'FaXTwitter' },
   { label: 'LinkedIn', href: 'https://linkedin.com', icon: 'FaLinkedin' },
+  { label: 'YouTube', href: 'https://youtube.com', icon: 'FaYoutube' },
   { label: 'WhatsApp', href: `https://wa.me/${WHATSAPP_NUMBER}`, icon: 'FaWhatsapp' },
 ];
 

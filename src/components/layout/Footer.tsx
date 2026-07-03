@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { MapPin, Phone, Mail, Leaf, ArrowRight } from 'lucide-react';
 import {
   SITE_NAME,
@@ -17,8 +18,9 @@ import Logo from '../common/Logo';
 const socialIcons = [
   { icon: FaFacebook, href: 'https://facebook.com', label: 'Facebook' },
   { icon: FaInstagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FaXTwitter, href: 'https://twitter.com', label: 'X (Twitter)' },
   { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+  { icon: FaYoutube, href: 'https://youtube.com', label: 'YouTube' },
   { icon: FaWhatsapp, href: `https://wa.me/${WHATSAPP_NUMBER}`, label: 'WhatsApp' },
 ];
 

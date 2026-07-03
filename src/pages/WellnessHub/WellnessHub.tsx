@@ -8,7 +8,7 @@ import SectionDecorations from '../../components/common/SectionDecorations';
 import NewsletterForm from '../../components/forms/NewsletterForm';
 
 import WellnessHubHero from '../../components/wellness-hub/WellnessHubHero';
-import HubStatsBar from '../../components/wellness-hub/HubStatsBar';
+// import HubStatsBar from '../../components/wellness-hub/HubStatsBar';
 import FeaturedArticle from '../../components/wellness-hub/FeaturedArticle';
 import WellnessTips from '../../components/wellness-hub/WellnessTips';
 import ArticleGrid from '../../components/wellness-hub/ArticleGrid';
@@ -26,7 +26,7 @@ export default function WellnessHub() {
   return (
     <>
       <WellnessHubHero />
-      <HubStatsBar />
+      {/* <HubStatsBar /> */}
       <FeaturedArticle post={featuredPost} />
       <WellnessTips />
       <ArticleGrid
@@ -36,7 +36,7 @@ export default function WellnessHub() {
       />
 
       {/* Newsletter + Programs CTA Banner */}
-      <section className="py-14 md:py-18 relative overflow-hidden z-10 bg-[#F8FAF6]/30">
+      <section className="py-14 md:py-18 relative overflow-hidden z-10">
         <SectionDecorations />
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
@@ -76,8 +76,6 @@ export default function WellnessHub() {
           </div>
         </Container>
       </section>
-
-      {/* <CTA /> */}
     </>
   );
 }

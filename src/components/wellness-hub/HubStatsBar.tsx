@@ -13,7 +13,7 @@ const hubStats = [
 
 export default function HubStatsBar() {
   return (
-    <section className="py-14 md:py-16 bg-[#002d26] relative overflow-hidden">
+    <section className="py-14 md:py-18  bg-[#002d26] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-secondary rounded-full blur-3xl" />

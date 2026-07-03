@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX, HiPhone, HiMail, HiClock, HiLocationMarker } from 'react-icons/hi';
-import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { NAV_ITEMS, CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_TEL, WHATSAPP_NUMBER } from '../../constants';
 import Logo from '../common/Logo';
 import ServicesDropdown, { MobileServicesList } from './ServicesDropdown';
@@ -73,6 +74,7 @@ export default function Navbar() {
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Facebook"
                   className="hover:text-[#cce452] transition-colors"
                 >
                   <FaFacebook className="w-3.5 h-3.5" />
@@ -81,14 +83,34 @@ export default function Navbar() {
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Instagram"
                   className="hover:text-[#cce452] transition-colors"
                 >
                   <FaInstagram className="w-3.5 h-3.5" />
                 </a>
                 <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                  className="hover:text-[#cce452] transition-colors"
+                >
+                  <FaXTwitter className="w-3.5 h-3.5" />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="hover:text-[#cce452] transition-colors"
+                >
+                  <FaLinkedin className="w-3.5 h-3.5" />
+                </a>
+                <a
                   href="https://youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="YouTube"
                   className="hover:text-[#cce452] transition-colors"
                 >
                   <FaYoutube className="w-3.5 h-3.5" />

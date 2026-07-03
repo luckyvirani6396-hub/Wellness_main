@@ -54,7 +54,7 @@ export default function OurApproach() {
   ];
 
   return (
-    <section className=" py-16 md:py-24 relative z-20">
+    <section className="py-14 md:py-18 relative z-20">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 items-center">
           {/* Left Title Column */}

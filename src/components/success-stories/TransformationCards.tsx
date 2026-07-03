@@ -11,7 +11,7 @@ interface TransformationCardsProps {
 
 export default function TransformationCards({ stories }: TransformationCardsProps) {
   return (
-    <section id="transformations" className="py-14 md:py-18 relative overflow-hidden z-10 bg-[#F8FAF6]/30">
+    <section id="transformations" className="py-14 md:py-18 relative overflow-hidden z-10">
       <SectionDecorations />
 
       <Container>
