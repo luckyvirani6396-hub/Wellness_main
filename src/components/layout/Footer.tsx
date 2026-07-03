@@ -7,7 +7,8 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
   CONTACT_PHONE_TEL,
-  CONTACT_ADDRESS,
+  COMPANY_NAME,
+  STREET_ADDRESS,
   WHATSAPP_NUMBER,
 } from '../../constants';
 import Container from '../common/Container';
@@ -161,9 +162,14 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-lg bg-[#5c8730]/15 border border-[#5c8730]/30 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#5c8730] group-hover:border-[#5c8730] transition-all duration-300">
                   <MapPin className="w-3.5 h-3.5 text-[#72A93B] group-hover:text-white transition-colors duration-300" />
                 </div>
-                <span className="text-[13px] text-[#b8cfc0] leading-relaxed group-hover:text-white/90 transition-colors duration-300">
-                  {CONTACT_ADDRESS}
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-[13.5px] font-bold text-white leading-tight mb-1">
+                    {COMPANY_NAME}
+                  </span>
+                  <span className="text-[13px] text-[#b8cfc0] leading-relaxed group-hover:text-white/90 transition-colors duration-300">
+                    {STREET_ADDRESS}
+                  </span>
+                </div>
               </li>
 
               {/* Phone */}

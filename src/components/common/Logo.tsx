@@ -26,18 +26,16 @@ export default function Logo({
   linkToHome = true,
 }: LogoProps) {
   const content = (
-    <span className={`inline-flex items-center gap-3 py-2  ${className}`}>
-      <LogoMark className="h-14 w-auto" />
+    <span className={`inline-flex items-center gap-2 sm:gap-3 py-1 sm:py-2 ${className}`}>
+      <LogoMark className="h-10 sm:h-12 md:h-14 w-auto" />
 
       <span className="flex flex-col leading-none select-none">
         {/* DAYSTAR */}
         <span
+          className="font-bold uppercase text-[15px] sm:text-[18px] md:text-[20px]"
           style={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: "20px",
-            fontWeight: 700,
             color: "#D86F1E",
-            textTransform: "uppercase",
             lineHeight: 1,
           }}
         >
@@ -46,13 +44,10 @@ export default function Logo({
 
         {/* PINNACLE */}
         <span
+          className="font-semibold uppercase mt-0.5 text-[13px] sm:text-[16px] md:text-[18px]"
           style={{
-            marginTop: "1px",
             fontFamily: "'Cormorant Garamond', serif",
-            fontSize: "18px",
-            fontWeight: 600,
             color: "#73A63C",
-            textTransform: "uppercase",
             lineHeight: 1,
           }}
         >
@@ -61,26 +56,19 @@ export default function Logo({
 
         {/* Decorative line */}
         <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            marginTop: "2px",
-            width: "95%",
-          }}
+          className="flex items-center mt-1 w-[95%]"
         >
           <div
+            className="flex-1 h-[1px]"
             style={{
-              flex: 1,
-              height: "1px",
               background: "#9AC56A",
             }}
           />
 
           <span
+            className="text-[10px] sm:text-[12px] md:text-[14px] mx-1.5 sm:mx-2.5"
             style={{
               color: "#D86F1E",
-              fontSize: "14px",
-              margin: "0 10px",
               lineHeight: 1,
             }}
           >
@@ -88,9 +76,8 @@ export default function Logo({
           </span>
 
           <div
+            className="flex-1 h-[1px]"
             style={{
-              flex: 1,
-              height: "1px",
               background: "#9AC56A",
             }}
           />

@@ -9,7 +9,8 @@ import {
   CONTACT_EMAIL,
   CONTACT_PHONE,
   CONTACT_PHONE_TEL,
-  CONTACT_ADDRESS,
+  COMPANY_NAME,
+  STREET_ADDRESS,
   WHATSAPP_NUMBER,
 } from '../../constants';
 import { fadeUp } from '../../utils/animations';
@@ -18,7 +19,16 @@ const contactMethods = [
   {
     icon: HiLocationMarker,
     title: 'Visit Us',
-    detail: CONTACT_ADDRESS,
+    detail: (
+      <>
+        <span className="font-bold text-dark block mb-1">
+          {COMPANY_NAME}
+        </span>
+        <span>
+          {STREET_ADDRESS}
+        </span>
+      </>
+    ),
     href: undefined,
   },
   {
