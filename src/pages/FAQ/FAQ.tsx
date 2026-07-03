@@ -10,6 +10,7 @@ interface FAQItem {
   answer: string;
 }
 
+
 const FAQ_ITEMS: FAQItem[] = [
   {
     question: 'What health and nutrition programs do you offer?',
