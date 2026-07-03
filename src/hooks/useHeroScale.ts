@@ -48,6 +48,7 @@ export function useHeroScale(
     const update = () => setState(calc());
     window.addEventListener('resize', update);
     return () => window.removeEventListener('resize', update);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [designWidth, baseHeight]);
 
   return state;

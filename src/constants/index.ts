@@ -18,7 +18,7 @@ export const WHATSAPP_NUMBER = '1204414400';
 export const CONTACT_EMAIL = 'info@daystarpinnacle.in';
 export const CONTACT_PHONE = '0120 - 4414400';
 export const CONTACT_PHONE_TEL = '01204414400';
-export const CONTACT_ADDRESS = 'Daystar Pinnacle Private Limited Plot No.46, Lal Kothi, Satya Vihar Colony, Gandhi Nagar (Jaipur), Jaipur, Jaipur - 302015, Rajasthan';
+export const CONTACT_ADDRESS = 'Daystar Pinnacle Pvt. Ltd. Plot No.46, Lal Kothi, Satya Vihar Colony, Gandhi Nagar (Jaipur), Jaipur, Jaipur - 302015, Rajasthan';
 
 export const SOCIAL_LINKS = [
   { label: 'Facebook', href: 'https://facebook.com', icon: 'FaFacebook' },

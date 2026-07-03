@@ -15,6 +15,7 @@ export default function ServicesDropdown({ isActive, isLight = false, isCapsule 
   const location = useLocation();
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsOpen(false);
   }, [location.pathname]);
 

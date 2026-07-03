@@ -37,7 +37,7 @@ const contactMethods = [
 
 export default function ContactSection() {
   return (
-    <section id="contact-form" className="py-14 md:py-18 relative overflow-hidden z-10 bg-[#F8FAF6]/30">
+    <section id="contact-form" className="py-14 md:py-18 relative overflow-hidden z-10">
       <SectionDecorations />
 
       <Container>

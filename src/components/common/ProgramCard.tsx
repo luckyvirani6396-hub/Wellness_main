@@ -8,6 +8,7 @@ import { fadeUp } from '../../utils/animations';
 const MotionLink = motion.create(Link);
 
 interface ProgramCardProps {
+  id?: string;
   title: string;
   subtitle: string;
   description: string;
@@ -20,6 +21,7 @@ interface ProgramCardProps {
 }
 
 export default function ProgramCard({
+  id,
   title,
   subtitle,
   description,
@@ -109,7 +111,7 @@ export default function ProgramCard({
   );
 
   return (
-    <motion.div variants={fadeUp} whileHover={{ y: -8, transition: { duration: 0.3 } }}>
+    <motion.div id={id} variants={fadeUp} whileHover={{ y: -8, transition: { duration: 0.3 } }}>
       <MotionLink to={to} className="block h-full no-underline">
         {card}
       </MotionLink>

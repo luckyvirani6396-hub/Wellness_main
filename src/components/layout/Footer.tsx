@@ -22,11 +22,11 @@ const socialIcons = [
 ];
 
 const programs = [
-  'Weight Transformation',
-  'PCOS Health',
-  'Diabetes Management',
-  'Corporate Health',
-  'Mind & Body Balance',
+  { label: 'Weight Transformation', to: '/programs#weight-transformation' },
+  { label: 'PCOS Health', to: '/services/pcos' },
+  { label: 'Diabetes Management', to: '/services/diabetes-program' },
+  { label: 'Corporate Health', to: '/programs#corporate-health' },
+  { label: 'Mind & Body Balance', to: '/programs#mind-body' },
 ];
 
 export default function Footer() {
@@ -136,13 +136,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               {programs.map((program) => (
-                <li key={program}>
+                <li key={program.label}>
                   <Link
-                    to="/programs"
+                    to={program.to}
                     className="group flex items-center gap-2 text-[#b8cfc0] hover:text-white transition-all duration-300 text-[13.5px]"
                   >
                     <ArrowRight className="w-3 h-3 text-[#5c8730] opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 shrink-0" />
-                    <span className="group-hover:translate-x-1 transition-transform duration-300">{program}</span>
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">{program.label}</span>
                   </Link>
                 </li>
               ))}
@@ -217,7 +217,7 @@ export default function Footer() {
           <p className="text-[#b8cfc0]/50 text-[12px] text-center md:text-left">
             © {new Date().getFullYear()} <span className="text-[#b8cfc0]/70">{SITE_NAME}</span>. All rights reserved.
             <span className="mx-2 text-white/15">|</span>
-            Powered by <span className="text-[#72A93B]/80">Daystar Pinnacle Private Limited</span>.
+            Powered by <span className="text-[#72A93B]/80">Daystar Pinnacle Pvt. Ltd</span>.
           </p>
           <div className="flex items-center gap-6 text-[12px] text-[#b8cfc0]/50">
             <a href="#" className="hover:text-[#72A93B] transition-colors duration-300">Privacy Policy</a>

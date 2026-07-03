@@ -25,6 +25,7 @@
 }
 
 @layer base {
+
   html,
   body {
     scroll-behavior: smooth;
@@ -97,6 +98,7 @@ select:focus {
 }
 
 @keyframes loader-pulse-ring {
+
   0%,
   100% {
     transform: scale(1);
@@ -110,6 +112,7 @@ select:focus {
 }
 
 @keyframes loader-logo-float {
+
   0%,
   100% {
     transform: translateY(0) scale(1);
@@ -121,6 +124,7 @@ select:focus {
 }
 
 @keyframes loader-dot-bounce {
+
   0%,
   80%,
   100% {
@@ -148,4 +152,23 @@ select:focus {
 
 .loader-dot {
   animation: loader-dot-bounce 1.2s ease-in-out infinite;
+}
+
+/* Google Maps InfoWindow — align close (×) button on the same row as the logo */
+.gm-style-iw-chr {
+  position: absolute !important;
+  top: 0px !important;
+  right: 0px !important;
+  z-index: 10 !important;
+  height: auto !important;
+  /* padding: 0 !important; */
+}
+
+.gm-style .gm-style-iw-c {
+  padding: 0 !important
+}
+
+.gm-style-iw-d {
+  overflow: auto !important;
+  padding-right: 0 !important;
 }

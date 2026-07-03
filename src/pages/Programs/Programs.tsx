@@ -274,6 +274,7 @@ export default function Programs() {
             {pagePrograms.map((program) => (
               <ProgramCard
                 key={program.id}
+                id={program.id}
                 title={program.title}
                 subtitle={program.subtitle}
                 description={program.description}

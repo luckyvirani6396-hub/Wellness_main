@@ -22,39 +22,79 @@ function LogoMark({ className = '' }: { className?: string }) {
 }
 
 export default function Logo({
-  className = '',
+  className = "",
   linkToHome = true,
-  light = false,
 }: LogoProps) {
-
-  const markSize = 'h-10 sm:h-11 md:h-12 w-auto';
-
   const content = (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <LogoMark className={markSize} />
-      {/* Brand name styled to match official Daystar Pinnacle branding */}
+    <span className={`inline-flex items-center gap-3 py-2  ${className}`}>
+      <LogoMark className="h-14 w-auto" />
+
       <span className="flex flex-col leading-none select-none">
+        {/* DAYSTAR */}
         <span
-          className="font-bold tracking-tight leading-none"
           style={{
-            fontFamily: "'Georgia', 'Times New Roman', serif",
-            fontSize: 'clamp(18px, 2vw, 24px)',
-            color: light ? '#ffffff' : '#14435a',
-            letterSpacing: '-0.01em',
+            fontFamily: "'Cormorant Garamond', serif",
+            fontSize: "20px",
+            fontWeight: 700,
+            color: "#D86F1E",
+            textTransform: "uppercase",
+            lineHeight: 1,
           }}
         >
-          Daystar
+          DAYSTAR
         </span>
+
+        {/* PINNACLE */}
         <span
-          className="uppercase font-bold tracking-[0.22em] leading-none mt-[3px]"
           style={{
-            fontFamily: "'Trebuchet MS', 'Arial', sans-serif",
-            fontSize: 'clamp(9px, 1vw, 11px)',
-            color: '#6aaa2e',
+            marginTop: "1px",
+            fontFamily: "'Cormorant Garamond', serif",
+            fontSize: "18px",
+            fontWeight: 600,
+            color: "#73A63C",
+            textTransform: "uppercase",
+            lineHeight: 1,
           }}
         >
-          Pinnacle
+          PINNACLE
         </span>
+
+        {/* Decorative line */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginTop: "2px",
+            width: "95%",
+          }}
+        >
+          <div
+            style={{
+              flex: 1,
+              height: "1px",
+              background: "#9AC56A",
+            }}
+          />
+
+          <span
+            style={{
+              color: "#D86F1E",
+              fontSize: "14px",
+              margin: "0 10px",
+              lineHeight: 1,
+            }}
+          >
+            ✦
+          </span>
+
+          <div
+            style={{
+              flex: 1,
+              height: "1px",
+              background: "#9AC56A",
+            }}
+          />
+        </div>
       </span>
     </span>
   );
@@ -63,8 +103,8 @@ export default function Logo({
     return (
       <Link
         to="/"
-        className="inline-flex shrink-0 items-center hover:opacity-90 transition-opacity"
-        aria-label={`${SITE_NAME} home`}
+        className="inline-flex items-center"
+        aria-label="Daystar Pinnacle"
       >
         {content}
       </Link>
