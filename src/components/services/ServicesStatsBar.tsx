@@ -4,10 +4,10 @@ import { clinicalServices } from '../../assets/data/clinicalServices';
 import { fadeUp, staggerContainer } from '../../utils/animations';
 
 const serviceStats = [
-  { value: `${clinicalServices.length}+`, label: 'Clinical Services' },
-  { value: '100%', label: 'Personalized Plans' },
+  { value: `${clinicalServices.length}+`, label: 'Wellness Categories' },
+  { value: '100%', label: 'Customized Programs' },
   { value: '24hr', label: 'Response Time' },
-  { value: '10+', label: 'Years Experience' },
+  { value: '12+', label: 'Industries Served' },
 ];
 
 export default function ServicesStatsBar() {

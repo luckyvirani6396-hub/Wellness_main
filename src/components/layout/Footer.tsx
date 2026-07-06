@@ -24,12 +24,12 @@ const socialIcons = [
   { icon: FaWhatsapp, href: `https://wa.me/${WHATSAPP_NUMBER}`, label: 'WhatsApp' },
 ];
 
-const programs = [
-  { label: 'Weight Transformation', to: '/programs#weight-transformation' },
-  { label: 'PCOS Health', to: '/services/pcos' },
-  { label: 'Diabetes Management', to: '/services/diabetes-program' },
-  { label: 'Corporate Health', to: '/programs#corporate-health' },
-  { label: 'Mind & Body Balance', to: '/programs#mind-body' },
+const solutions = [
+  { label: 'Corporate Wellness Programs', to: '/services' },
+  { label: 'Wellness Workshops', to: '/services' },
+  { label: 'Wellness Events', to: '/services' },
+  { label: 'Employee Engagement', to: '/services' },
+  { label: 'Team Building', to: '/services' },
 ];
 
 export default function Footer() {
@@ -84,7 +84,7 @@ export default function Footer() {
             </svg>
 
             <p className="text-[#b8cfc0] text-[14px] leading-relaxed mb-7 max-w-xs">
-              Empowering individuals with sustainable nutrition and holistic health practices for a healthier, happier, and more balanced life.
+              Helping organizations build healthier, happier, and more productive workplaces through engaging corporate wellness programs.
             </p>
 
             {/* Hours badge */}
@@ -135,10 +135,10 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <h3 className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#72A93B] mb-5 flex items-center gap-2">
               <span className="block w-4 h-[2px] bg-[#72A93B]/60 rounded-full" />
-              Our Programs
+              Our Solutions
             </h3>
             <ul className="space-y-3">
-              {programs.map((program) => (
+              {solutions.map((program) => (
                 <li key={program.label}>
                   <Link
                     to={program.to}

@@ -15,20 +15,20 @@ export default function Programs() {
 
   const faqs = [
     {
-      q: 'Can I switch programs if my goals change?',
-      a: 'Absolutely. We understand that your health journey can evolve. Your coach will review your progress and help transition you to the program that aligns best with your new direction.',
+      q: 'Can we upgrade our package as our team grows?',
+      a: 'Absolutely. Our packages are designed to scale with your organization. You can move from Kickstart to Growth or Total Transformation at any time, and we will adjust the program accordingly.',
     },
     {
-      q: 'Is support one-on-one or in a group?',
-      a: 'Every program includes dedicated one-on-one video coaching sessions with your certified nutritionist, alongside access to our community groups for daily motivation and accountability.',
+      q: 'Are sessions delivered onsite or virtually?',
+      a: 'Both. We offer onsite, virtual, and hybrid delivery so your teams can participate wherever they work — in the office, remote, or distributed across locations.',
     },
     {
-      q: 'Do you support vegetarian or food allergy diets?',
-      a: 'Yes! All meal plans are customized from scratch. We accommodate vegetarian, vegan, gluten-free, dairy-free, PCOS-friendly, and all major food allergy requirements.',
+      q: 'Can we customize the package contents?',
+      a: 'Yes. Every organization is different, and we tailor the mix of sessions, workshops, and challenges to your company culture, goals, and employee needs.',
     },
     {
-      q: 'What happens after my program ends?',
-      a: 'We focus on sustainable habit change so you feel equipped to maintain your results. We also offer affordable alumni maintenance packages for ongoing coach check-ins and support.',
+      q: 'How do you measure program success?',
+      a: 'We track participation, engagement, and wellbeing outcomes, and share regular reports so HR and leadership can see the impact of the program over time.',
     },
   ];
 
@@ -94,7 +94,7 @@ export default function Programs() {
                 animate="visible"
                 className="text-xl md:text-2xl font-bold text-[#5c8730] mb-4 leading-snug"
               >
-                Pick Your Transformation Path.
+                Wellness Packages for Every Team Size.
               </motion.h2>
 
               {/* Description */}
@@ -104,7 +104,7 @@ export default function Programs() {
                 animate="visible"
                 className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium"
               >
-                Time-bound programs that bundle coaching, meal plans, and milestones into a complete transformation experience.
+                Corporate wellness packages that bundle expert-led sessions, workshops, and challenges into a complete program for your workforce.
               </motion.p>
 
               {/* Holistic Badge Flow Grid */}
@@ -123,7 +123,7 @@ export default function Programs() {
                     <Users className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Personalized<br />Coaching
+                    Expert-Led<br />Sessions
                   </span>
                 </div>
 
@@ -133,7 +133,7 @@ export default function Programs() {
                     <Utensils className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Custom<br />Nutrition
+                    Customized<br />Programs
                   </span>
                 </div>
 
@@ -143,7 +143,7 @@ export default function Programs() {
                     <Target className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Milestone<br />Tracking
+                    Measurable<br />Results
                   </span>
                 </div>
               </motion.div>
@@ -159,7 +159,7 @@ export default function Programs() {
                   href="#programs-list"
                   className="px-7 py-3.5 rounded-full bg-[#5c8730] hover:bg-[#496b26] text-white font-bold text-sm transition-all duration-300 inline-flex items-center gap-2 shadow-md shadow-[#5c8730]/10 hover:scale-[1.02]"
                 >
-                  <span>Explore Our Programs</span>
+                  <span>Explore Our Packages</span>
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </motion.div>
@@ -203,9 +203,9 @@ export default function Programs() {
                 <Users className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Coaching</span>
+                <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Sessions</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  One-on-one expert guidance.
+                  Expert-led wellness sessions.
                 </p>
               </div>
             </div>
@@ -215,9 +215,9 @@ export default function Programs() {
                 <Utensils className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Nutrition</span>
+                <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Workshops</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  Custom meal plans built for you.
+                  Engaging wellness workshops.
                 </p>
               </div>
             </div>
@@ -227,9 +227,9 @@ export default function Programs() {
                 <Target className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Milestones</span>
+                <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Reporting</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  Weekly progress tracking.
+                  Participation & outcome reports.
                 </p>
               </div>
             </div>
@@ -241,7 +241,7 @@ export default function Programs() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Support</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  Dedicated coach throughout.
+                  Dedicated wellness consultant.
                 </p>
               </div>
             </div>
@@ -260,9 +260,9 @@ export default function Programs() {
       <section id="programs-list" className="py-14 md:py-18  relative z-10">
         <Container>
           <SectionTitle
-            subtitle="Enroll Today"
-            title="Pick Your Transformation Path"
-            description="Every program includes personalized guidance, progress tracking, and dedicated coach support."
+            subtitle="Corporate Packages"
+            title="Wellness Packages for Every Team Size"
+            description="From startups to enterprises — choose the package that matches your organization, or let us build a custom one."
           />
           <motion.div
             variants={staggerContainer}
@@ -307,30 +307,30 @@ export default function Programs() {
         <Container>
           <SectionTitle
             subtitle="Features"
-            title="Fully Supported Journeys"
-            description="Every transformation program bundles expert guidance, accountability, and practical tools."
+            title="Everything Your Program Needs"
+            description="Every corporate package bundles expert delivery, engagement, and measurable outcomes."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {[
               {
                 icon: <Users className="w-6 h-6" />,
-                title: 'Coach Support',
-                features: ['1-on-1 consultations', 'Daily messaging support', 'Weekly goal check-ins'],
+                title: 'Expert-Led Sessions',
+                features: ['Certified trainers & coaches', 'Yoga, fitness & meditation', 'Onsite, virtual or hybrid'],
               },
               {
                 icon: <Utensils className="w-6 h-6" />,
-                title: 'Custom Meal Plans',
-                features: ['Nutritionally balanced', 'Grocery shopping lists', 'Meal prep guidelines'],
+                title: 'Workshops & Talks',
+                features: ['Nutrition & healthy eating', 'Stress management', 'Mental health awareness'],
               },
               {
                 icon: <Target className="w-6 h-6" />,
-                title: 'Milestone Tracking',
-                features: ['Digital tracking portal', 'Metabolic checkpoints', 'Regular reports'],
+                title: 'Engagement & Challenges',
+                features: ['Wellness challenges', 'Team-building activities', 'Annual wellness calendar'],
               },
               {
                 icon: <Brain className="w-6 h-6" />,
-                title: 'Habit Integration',
-                features: ['Mindfulness routines', 'Sleep optimization', 'Daily movement targets'],
+                title: 'Reporting & Insights',
+                features: ['Participation tracking', 'Engagement reports', 'Outcome measurement'],
               },
             ].map((card, idx) => (
               <motion.div
@@ -378,25 +378,25 @@ export default function Programs() {
         <Container>
           <SectionTitle
             subtitle="Process"
-            title="Your Path to Vitality"
-            description="A simple, evidence-based approach designed to fit seamlessly into your life."
+            title="From Inquiry to Launch"
+            description="A simple, proven approach designed to fit seamlessly into your organization."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-12 relative z-10">
             {[
               {
                 step: '01',
-                title: 'Discovery Session',
-                desc: 'A free introductory consultation to explore your health goals, medical profile, and lifestyle habits.',
+                title: 'Free Consultation',
+                desc: 'We understand your organization, employee needs, and wellness goals in an introductory consultation.',
               },
               {
                 step: '02',
-                title: 'Custom Plan Crafting',
-                desc: 'Our experts curate personalized metabolic meal plans, movement guidelines, and habit roadmaps.',
+                title: 'Custom Program Design',
+                desc: 'Our experts design a tailored wellness program and package recommendation for your team size and budget.',
               },
               {
                 step: '03',
-                title: 'Active Coaching & Results',
-                desc: 'Weekly check-ins, metabolic monitoring, and continuous plan adjustments ensure you hit every milestone.',
+                title: 'Launch & Measure',
+                desc: 'We launch the program, track participation and engagement, and continuously improve based on results.',
               },
             ].map((step, idx) => (
               <motion.div
@@ -428,7 +428,7 @@ export default function Programs() {
           <SectionTitle
             subtitle="FAQ"
             title="Frequently Asked Questions"
-            description="Everything you need to know about starting and succeeding in our health and nutrition programs."
+            description="Everything you need to know about our corporate wellness packages and how they work."
           />
           <div className="max-w-3xl mx-auto mt-10 bg-white rounded-[32px] border border-[#E2E8E4]/60 p-6 md:p-10 shadow-sm relative z-10">
             {faqs.map((faq, index) => (

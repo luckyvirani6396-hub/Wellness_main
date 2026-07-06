@@ -5,8 +5,10 @@ import { testimonials } from '../../assets/data/content';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
 
+const len = testimonials.length;
+
 export default function Testimonials() {
-  const [current, setCurrent] = useState(4); // Start at middle copy
+  const [current, setCurrent] = useState(len); // Start at middle copy
   const [transitionEnabled, setTransitionEnabled] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
   const [visibleCards, setVisibleCards] = useState(3);
@@ -42,17 +44,17 @@ export default function Testimonials() {
 
   // Instantly reset position to middle copy for infinite looping
   useEffect(() => {
-    if (current >= 8) {
+    if (current >= len * 2) {
       const timer = setTimeout(() => {
         setTransitionEnabled(false);
-        setCurrent((prev) => prev - 4);
+        setCurrent((prev) => prev - len);
       }, 400);
       return () => clearTimeout(timer);
     }
     if (current <= 0) {
       const timer = setTimeout(() => {
         setTransitionEnabled(false);
-        setCurrent((prev) => prev + 4);
+        setCurrent((prev) => prev + len);
       }, 400);
       return () => clearTimeout(timer);
     }
@@ -68,28 +70,15 @@ export default function Testimonials() {
     setCurrent((prev) => prev + 1);
   };
 
-  const activeDotIndex = visibleCards === 3 ? (current + 1) % 4 : current % 4;
+  const activeDotIndex = visibleCards === 3 ? (current + 1) % len : current % len;
 
   const handleDotClick = (index: number) => {
     setTransitionEnabled(true);
     if (visibleCards === 3) {
-      setCurrent(index + 3);
+      setCurrent(index + len - 1);
     } else {
-      setCurrent(index + 4);
+      setCurrent(index + len);
     }
-  };
-
-  const getCategory = (role: string) => {
-    if (role.toLowerCase().includes('nutrition') || role.toLowerCase().includes('weight')) {
-      return 'NUTRITION';
-    }
-    if (role.toLowerCase().includes('corporate') || role.toLowerCase().includes('wellness') || role.toLowerCase().includes('health')) {
-      return 'HEALTH';
-    }
-    if (role.toLowerCase().includes('pcos') || role.toLowerCase().includes('holistic')) {
-      return 'HEALTH';
-    }
-    return 'NUTRITION';
   };
 
   return (
@@ -144,7 +133,7 @@ export default function Testimonials() {
         <SectionTitle
           subtitle="Testimonials"
           title="What Our Clients Say"
-          description="Real stories from people who transformed their health with Daystar Pinnacle."
+          description="Real feedback from HR leaders and organizations that transformed their workplace wellbeing with us."
         />
 
         <div className="relative max-w-6xl mx-auto mt-8 px-4 md:px-8">
@@ -246,7 +235,7 @@ export default function Testimonials() {
                               {testimonial.name}
                             </h5>
                             <p className="text-[#72A93B] text-[10px] font-extrabold uppercase tracking-widest mt-1">
-                              {getCategory(testimonial.role)}
+                              {testimonial.role}
                             </p>
                           </div>
                         </div>

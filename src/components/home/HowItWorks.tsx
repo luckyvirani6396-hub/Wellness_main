@@ -11,7 +11,7 @@ export default function HowItWorks() {
         <SectionTitle
           subtitle="Our Process"
           title="How It Works"
-          description="A simple, proven 5-step process to help you achieve lasting health results."
+          description="Getting started is simple — a proven 5-step process from inquiry to program launch."
         />
 
         <div className="max-w-3xl mx-auto">

@@ -86,9 +86,9 @@ export default function Programs() {
 
       <Container>
         <SectionTitle
-          subtitle="Our Programs"
-          title="Structured Transformation Journeys"
-          description="Multi-week plans with coaching, milestones, and everything bundled — for a complete lifestyle change."
+          subtitle="Corporate Packages"
+          title="Wellness Packages for Every Team Size"
+          description="From startups to enterprises — choose the package that matches your organization, or let us build a custom one."
         />
 
         <motion.div
@@ -190,8 +190,8 @@ export default function Programs() {
               </svg>
             </div>
             <div>
-              <h4 className="font-bold text-dark text-base md:text-lg mb-0.5">Not sure which path is right for you?</h4>
-              <p className="text-muted text-sm leading-relaxed">Take our quick assessment and we'll recommend the best program.</p>
+              <h4 className="font-bold text-dark text-base md:text-lg mb-0.5">Not sure which package fits your organization?</h4>
+              <p className="text-muted text-sm leading-relaxed">Take our quick assessment and we'll recommend the best-fit wellness package.</p>
             </div>
           </div>
 

@@ -1,7 +1,7 @@
 import type { NavItem } from '../types';
 
 export const SITE_NAME = 'Daystar Pinnacle';
-export const SITE_TAGLINE = 'Personalized Health & Nutrition';
+export const SITE_TAGLINE = 'Corporate Wellness Programs';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },

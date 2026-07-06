@@ -83,7 +83,7 @@ export default function About() {
                 animate="visible"
                 className="text-xl md:text-2xl font-bold text-[#5c8730] mb-4 leading-snug"
               >
-                Nurturing Health. Transforming Lives.
+                Building Healthier Workplaces.
               </motion.h2>
 
               {/* Description */}
@@ -93,7 +93,7 @@ export default function About() {
                 animate="visible"
                 className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium"
               >
-                We believe in a holistic approach to health that nurtures the body, mind, and spirit.
+                Our mission is to help organizations create workplaces where employees can thrive physically, mentally, and emotionally.
               </motion.p>
 
               {/* Holistic Badge Flow Grid */}
@@ -112,7 +112,7 @@ export default function About() {
                     <Sprout className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Holistic<br />Approach
+                    Customized<br />Strategies
                   </span>
                 </div>
 
@@ -122,7 +122,7 @@ export default function About() {
                     <Brain className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Mind-Body<br />Balance
+                    Expert-Led<br />Sessions
                   </span>
                 </div>
 
@@ -132,7 +132,7 @@ export default function About() {
                     <Flower2 className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.6} />
                   </div>
                   <span className="text-[11.5px] sm:text-[12.5px] font-bold text-[#153B24] text-center mt-3.5 leading-snug tracking-wide">
-                    Natural<br />Health
+                    Measurable<br />Outcomes
                   </span>
                 </div>
               </motion.div>
@@ -195,7 +195,7 @@ export default function About() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Our Mission</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  To inspire healthier, happier lives.
+                  Workplaces where employees thrive.
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function About() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Our Vision</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  A world where health is a way of life.
+                  A trusted wellness partner across industries.
                 </p>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function About() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Our Values</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  Compassion, Integrity, Excellence.
+                  Engagement, Impact, Excellence.
                 </p>
               </div>
             </div>
@@ -234,7 +234,7 @@ export default function About() {
               <div>
                 <span className="text-xs font-bold text-[#5c8730] uppercase tracking-wider">Our Commitment</span>
                 <p className="text-xs text-[#2c4033] font-semibold mt-0.5 leading-relaxed max-w-[190px]">
-                  Your health is our priority.
+                  Your employees’ wellbeing is our priority.
                 </p>
               </div>
             </div>
@@ -264,17 +264,17 @@ export default function About() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <SectionTitle subtitle="Our Story" title="A Journey of Health" align="left" />
+              <SectionTitle subtitle="Our Story" title="Building Healthier Workplaces" align="left" />
               <p className="text-muted text-[15px] leading-relaxed mb-5 mt-4">
-                Founded over a decade ago, Daystar Pinnacle began with a simple mission: to make expert health guidance accessible to everyone. What started as a small nutrition consultancy has grown into a comprehensive health platform serving thousands of clients worldwide.
+                Our mission is to help organizations create workplaces where employees can thrive physically, mentally, and emotionally. We specialize in designing corporate wellness programs that are practical, scalable, and aligned with business goals.
               </p>
               <p className="text-muted text-[15px] leading-relaxed mb-8">
-                We focus on promoting physical, mental, and emotional well-being through evidence-based nutrition, mindful movement, and sustainable lifestyle changes. Our team of certified experts works closely with each client to create personalized plans that fit their unique needs and goals.
+                Our approach focuses on creating long-term impact through consistent engagement and measurable outcomes. Our team of certified wellness professionals works closely with HR leaders and management teams to design programs that fit each organization’s culture and goals.
               </p>
 
               {/* Feature list */}
               <ul className="space-y-3 mb-9">
-                {['Evidence-based nutrition science', 'Personalized health roadmaps', 'Ongoing coaching & accountability'].map((item) => (
+                {['Customized wellness strategies', 'Expert-led, engaging sessions', 'Measurable participation & outcomes'].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-[14.5px] font-medium text-dark">
                     <div className="w-5 h-5 rounded-full bg-[#E8F2EA] flex items-center justify-center shrink-0">
                       <svg viewBox="0 0 24 24" fill="none" stroke="#72A93B" strokeWidth="3.5" className="w-3 h-3">
@@ -290,7 +290,7 @@ export default function About() {
                 to="/contact"
                 className="inline-flex items-center gap-2 bg-[#002d26] text-white font-bold text-sm px-7 py-3.5 rounded-full hover:bg-[#A5D03B] hover:text-[#002d26] transition-all duration-300 shadow-md"
               >
-                Book a Consultation
+                Book a Corporate Consultation
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-4 h-4">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
@@ -330,7 +330,7 @@ export default function About() {
         <div className="absolute left-0 top-1/4 w-[280px] h-[450px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
-          <SectionTitle subtitle="Our Purpose" title="Vision & Mission" description="What drives everything we do at Daystar Pinnacle." />
+          <SectionTitle subtitle="Our Purpose" title="Vision & Mission" description="What drives everything we do as your corporate wellness partner." />
 
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
             {[
@@ -342,7 +342,7 @@ export default function About() {
                   </svg>
                 ),
                 label: 'Our Vision',
-                text: 'Creating healthier and happier communities through holistic health. We envision a world where everyone has access to the knowledge and support they need to live their healthiest, most fulfilling lives.',
+                text: 'To become a trusted wellness partner for organizations across industries by delivering high-quality, impactful wellness solutions.',
                 img: '/images/program-mind.png',
               },
               {
@@ -354,7 +354,7 @@ export default function About() {
                   </svg>
                 ),
                 label: 'Our Mission',
-                text: 'Empower individuals with sustainable nutrition and health practices. We are committed to providing science-based, personalized guidance that leads to lasting transformation — not quick fixes.',
+                text: 'To help organizations create workplaces where employees can thrive physically, mentally, and emotionally — through practical, scalable wellness programs aligned with business goals.',
                 img: '/images/about-yoga.png',
               },
             ].map((item) => (
@@ -392,7 +392,7 @@ export default function About() {
         <div className="absolute right-0 top-1/3 w-[280px] h-[400px] bg-gradient-to-l from-[#E8F2EA]/70 to-transparent rounded-l-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
-          <SectionTitle subtitle="Our Approach" title="How We Help You Thrive" description="Three pillars that form the foundation of every health journey." />
+          <SectionTitle subtitle="Our Approach" title="How We Help Your Teams Thrive" description="A proven approach behind every corporate wellness program we deliver." />
 
           <motion.div
             variants={staggerContainer}
@@ -402,9 +402,9 @@ export default function About() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10"
           >
             {[
-              { img: '/images/about-food.png', title: 'Smart Nutrition', desc: 'Personalized meal plans built on your unique metabolic profile, health goals, and food preferences.' },
-              { img: '/images/hero-yoga.png', title: 'Mindful Movement', desc: 'Gentle, sustainable activity routines that complement your nutrition and support lasting vitality.' },
-              { img: '/images/about-watch.png', title: 'Progress Tracking', desc: 'Data-driven insights and coach check-ins keep you on track and celebrate every milestone.' },
+              { img: '/images/about-food.png', title: 'Understand & Design', desc: 'We understand your company culture and needs, then design customized wellness strategies.' },
+              { img: '/images/hero-yoga.png', title: 'Deliver Engaging Sessions', desc: 'Expert-led sessions delivered by certified trainers, nutritionists, and mental health experts.' },
+              { img: '/images/about-watch.png', title: 'Measure & Improve', desc: 'We measure participation and outcomes, and continuously improve programs over time.' },
             ].map((pillar) => (
               <motion.div
                 key={pillar.title}
@@ -429,7 +429,7 @@ export default function About() {
         <div className="absolute left-0 top-1/4 w-[280px] h-[400px] bg-gradient-to-r from-[#E8F2EA]/85 to-transparent rounded-r-full blur-xl pointer-events-none" />
 
         <Container className="relative z-10">
-          <SectionTitle subtitle="Why Daystar Pinnacle" title="Why Choose Us" description="What sets us apart in the health and nutrition industry." />
+          <SectionTitle subtitle="Why Daystar Pinnacle" title="Why Choose Us" description="What sets us apart as a corporate wellness partner." />
           <motion.div
             variants={staggerContainer}
             initial="hidden"

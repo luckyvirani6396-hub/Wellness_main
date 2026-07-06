@@ -13,11 +13,11 @@ export default function CareApproach() {
               Why Choose Us
             </span>
             <h2 className="text-3xl md:text-[38px] font-serif font-medium text-[#0e261a] leading-tight">
-              Clinical Nutrition <br className="hidden md:inline" />
+              Corporate Wellness <br className="hidden md:inline" />
               You Can Trust
             </h2>
             <p className="text-muted text-sm md:text-base leading-relaxed mt-4 max-w-sm">
-              Every service is delivered by certified professionals using evidence-based methods tailored to your body and goals.
+              Every program is delivered by certified professionals using proven methods tailored to your organization and goals.
             </p>
           </div>
 

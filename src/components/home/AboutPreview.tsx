@@ -179,9 +179,9 @@ export default function AboutPreview() {
                     <polygon points="12 7.5 13.5 11 17 11 14.2 13 15.2 16.5 12 14.5 8.8 16.5 9.8 13 7 11 10.5 11" fill="none" stroke="#72A93B" strokeWidth="1.5" />
                   </svg>
                 </div>
-                <p className="text-lg sm:text-xl font-extrabold text-[#004B57] leading-none">3K+</p>
-                <p className="text-[10px] sm:text-[11px] text-muted font-medium mt-1 leading-tight">Lives</p>
-                <p className="text-[10px] sm:text-[11px] text-muted font-medium leading-tight">Transformed</p>
+                <p className="text-lg sm:text-xl font-extrabold text-[#004B57] leading-none">5K+</p>
+                <p className="text-[10px] sm:text-[11px] text-muted font-medium mt-1 leading-tight">Employees</p>
+                <p className="text-[10px] sm:text-[11px] text-muted font-medium leading-tight">Engaged</p>
               </div>
 
               {/* Divider */}
@@ -217,20 +217,20 @@ export default function AboutPreview() {
 
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-dark leading-tight mb-5">
-              Empowering{' '}
+              Your Partner in{' '}
               <br className="hidden sm:block" />
-              Healthier{' '}
+              Workplace{' '}
               <span className="relative inline-block text-dark">
-                Lives
+                Wellbeing
                 <span className="absolute left-0 bottom-1 w-full h-[6px] bg-secondary/80 rounded-full -z-10" />
               </span>
             </h2>
 
             {/* Main paragraph */}
             <p className="text-muted leading-relaxed mb-6 text-sm md:text-base">
-              We take a holistic approach to health, nurturing the body, mind,
-              and spirit — with expert guidance that's personalized, practical,
-              and accessible to all.
+              We are a corporate wellness company dedicated to helping
+              organizations create healthier, more productive workplaces
+              through customized wellness programs — onsite, virtual, or hybrid.
             </p>
 
             {/* Feature List */}
@@ -244,7 +244,7 @@ export default function AboutPreview() {
                   </svg>
                 </div>
                 <p className="text-muted leading-relaxed text-sm md:text-base">
-                  <span className="font-semibold text-dark">{SITE_NAME}</span> began with a simple mission: to help people build sustainable habits through nutrition, mindful movement, and lifestyle changes that actually last.
+                  <span className="font-semibold text-dark">{SITE_NAME}</span> partners with businesses of all sizes to design wellness experiences that align with company culture, employee needs, and business goals — because employee wellbeing is a strategic advantage.
                 </p>
               </div>
 
@@ -257,8 +257,8 @@ export default function AboutPreview() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-dark mb-0.5">Certified Experts</h4>
-                  <p className="text-sm text-muted leading-relaxed">Guidance from qualified nutrition & health professionals</p>
+                  <h4 className="text-sm font-bold text-dark mb-0.5">Certified Wellness Experts</h4>
+                  <p className="text-sm text-muted leading-relaxed">Sessions led by certified trainers, nutritionists, and mental health experts</p>
                 </div>
               </div>
 
@@ -272,8 +272,8 @@ export default function AboutPreview() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-dark mb-0.5">Personalized Plans</h4>
-                  <p className="text-sm text-muted leading-relaxed">Evidence-based strategies tailored to your unique goals</p>
+                  <h4 className="text-sm font-bold text-dark mb-0.5">Customized Programs</h4>
+                  <p className="text-sm text-muted leading-relaxed">Wellness strategies tailored to your organization’s culture and goals</p>
                 </div>
               </div>
 
@@ -287,7 +287,7 @@ export default function AboutPreview() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-dark mb-0.5">Proven Results</h4>
-                  <p className="text-sm text-muted leading-relaxed">10+ years of helping clients build healthier, stronger lives</p>
+                  <p className="text-sm text-muted leading-relaxed">Reduced absenteeism, higher engagement, and stronger workplace culture</p>
                 </div>
               </div>
             </div>
@@ -309,7 +309,7 @@ export default function AboutPreview() {
                 fullWidth
                 className="sm:w-auto text-[13px] sm:text-[14px] font-bold px-5 sm:px-6 py-2.5 sm:py-3 shadow-none flex items-center justify-center"
               >
-                Book a Consultation
+                Book a Corporate Consultation
               </Button>
             </div>
           </motion.div>

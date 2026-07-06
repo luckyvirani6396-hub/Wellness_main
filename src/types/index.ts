@@ -80,7 +80,13 @@ export interface ContactFormData {
   name: string;
   email: string;
   phone: string;
-  goal: string;
+  company: string;
+  jobTitle: string;
+  industry: string;
+  headcount: string;
+  programType: string;
+  deliveryMode: string;
+  startDate: string;
   message: string;
 }
 

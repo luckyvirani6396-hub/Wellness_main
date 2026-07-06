@@ -60,7 +60,7 @@ function HeroResponsive() {
               >
                 <img src="/images/leaf.png" alt="" className='w-12 h-12 object-contain' />
                 <span className="font-script text-2xl text-[#5c8730] font-medium leading-none">
-                  Inspiring you to live a healthier lifestyle
+                  Corporate wellness programs that energize your teams
                 </span>
               </motion.div>
 
@@ -68,9 +68,9 @@ function HeroResponsive() {
                 variants={childVariants}
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] tracking-tight leading-[1.05] text-[#0e261a] font-serif font-medium mb-3 max-w-2xl"
               >
-                Empower Your <br />
+                Empower Your Workforce. <br />
                 <span className="italic font-normal text-[#5c8730] inline-flex items-center gap-2.5">
-                  Health Journey
+                  Elevate Your Business.
                 </span>
               </motion.h1>
 
@@ -89,7 +89,7 @@ function HeroResponsive() {
                 variants={childVariants}
                 className="text-sm sm:text-base md:text-[16.5px] text-[#2c4033] max-w-lg mb-8 leading-relaxed font-medium"
               >
-                Transform your daily habits and restore natural vitality with personalized health coaching, active living, and mindful nutrition.
+                Customized wellness programs designed to boost employee health, productivity, and engagement — onsite, virtual, or hybrid.
               </motion.p>
 
               {/* CTAs */}
@@ -98,19 +98,19 @@ function HeroResponsive() {
                 className="flex flex-wrap items-center gap-4 w-full sm:w-auto"
               >
                 <Link
-                  to="/programs"
+                  to="/contact"
                   className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#5c8730] hover:bg-[#496b26] text-white font-bold text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-md shadow-[#5c8730]/10 hover:scale-[1.02]"
                 >
-                  <span>Explore Programs</span>
+                  <span>Get a Free Wellness Consultation</span>
                   <span className="w-5.5 h-5.5 rounded-full bg-white flex items-center justify-center text-[#5c8730]">
                     <ArrowRight className="w-3.5 h-3.5" strokeWidth={3} />
                   </span>
                 </Link>
                 <Link
-                  to="/contact"
+                  to="/services"
                   className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-transparent border border-[#0e261a] text-[#0e261a] hover:bg-[#0e261a]/5 font-bold text-sm transition-all duration-300 flex items-center justify-center gap-3 hover:scale-[1.02]"
                 >
-                  <span>Book Free Consultation</span>
+                  <span>Explore Our Programs</span>
                   <ArrowRight className="w-4 h-4 text-[#0e261a]" strokeWidth={2.5} />
                 </Link>
               </motion.div>
@@ -131,7 +131,7 @@ function HeroResponsive() {
           <Users className="w-7 h-7 shrink-0 text-[#5c8730]" strokeWidth={1.8} />
           <div>
             <div className="text-[17px] font-extrabold text-[#0e261a] leading-none">5000+</div>
-            <div className="text-[11px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Happy Clients</div>
+            <div className="text-[11px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Employees Engaged</div>
           </div>
         </div>
 
@@ -143,7 +143,7 @@ function HeroResponsive() {
           <Award className="w-7 h-7 shrink-0 text-[#5c8730]" strokeWidth={1.8} />
           <div>
             <div className="text-[17px] font-extrabold text-[#0e261a] leading-none">20+</div>
-            <div className="text-[11px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Expert Coaches</div>
+            <div className="text-[11px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Certified Experts</div>
           </div>
         </div>
 
@@ -217,7 +217,7 @@ function HeroCanvas({
               <motion.div variants={childVariants} className="flex items-center gap-2 mb-2">
                 <img src="/images/leaf.png" alt="" className="w-12 h-12 object-contain" />
                 <span className="font-script text-3xl text-[#5c8730] font-medium leading-none">
-                  Inspiring you to live a healthier lifestyle
+                  Corporate wellness programs that energize your teams
                 </span>
               </motion.div>
 
@@ -225,9 +225,9 @@ function HeroCanvas({
                 variants={childVariants}
                 className="text-[80px] tracking-tight leading-[1.05] text-[#0e261a] font-serif font-medium mb-3 max-w-4xl"
               >
-                Empower Your <br />
+                Empower Your Workforce. <br />
                 <span className="italic font-normal text-[#5c8730] inline-flex items-center gap-2.5">
-                  Health Journey
+                  Elevate Your Business.
                 </span>
               </motion.h1>
 
@@ -246,24 +246,24 @@ function HeroCanvas({
                 variants={childVariants}
                 className="text-[20.5px] text-[#2c4033] max-w-lg mb-8 leading-relaxed font-medium"
               >
-                Transform your daily habits and restore natural vitality with personalized health coaching, active living, and mindful nutrition.
+                Customized wellness programs designed to boost employee health, productivity, and engagement — onsite, virtual, or hybrid.
               </motion.p>
 
               <motion.div variants={childVariants} className="flex flex-wrap items-center gap-4">
                 <Link
-                  to="/programs"
+                  to="/contact"
                   className="px-7 py-3.5 rounded-full bg-[#5c8730] hover:bg-[#496b26] text-white font-bold text-sm transition-all duration-300 flex items-center justify-center gap-3 shadow-md shadow-[#5c8730]/10 hover:scale-[1.02]"
                 >
-                  <span>Explore Programs</span>
+                  <span>Get a Free Wellness Consultation</span>
                   <span className="w-5.5 h-5.5 rounded-full bg-white flex items-center justify-center text-[#5c8730]">
                     <ArrowRight className="w-3.5 h-3.5" strokeWidth={3} />
                   </span>
                 </Link>
                 <Link
-                  to="/contact"
+                  to="/services"
                   className="px-7 py-3.5 rounded-full bg-transparent border border-[#0e261a] text-[#0e261a] hover:bg-[#0e261a]/5 font-bold text-sm transition-all duration-300 flex items-center justify-center gap-3 hover:scale-[1.02]"
                 >
-                  <span>Book Free Consultation</span>
+                  <span>Explore Our Programs</span>
                   <ArrowRight className="w-4 h-4 text-[#0e261a]" strokeWidth={2.5} />
                 </Link>
               </motion.div>
@@ -282,7 +282,7 @@ function HeroCanvas({
           <Users className="w-9 h-9 shrink-0 text-[#5c8730]" strokeWidth={1.8} />
           <div>
             <div className="text-[22px] font-extrabold text-[#0e261a] leading-none">5000+</div>
-            <div className="text-[15px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Happy Clients</div>
+            <div className="text-[15px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Employees Engaged</div>
           </div>
         </div>
         <span className="h-8 w-[1px] bg-gray-200" />
@@ -290,7 +290,7 @@ function HeroCanvas({
           <Award className="w-9 h-9 shrink-0 text-[#5c8730]" strokeWidth={1.8} />
           <div>
             <div className="text-[22px] font-extrabold text-[#0e261a] leading-none">20+</div>
-            <div className="text-[15px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Expert Coaches</div>
+            <div className="text-[15px] text-[#4d5e53] font-semibold mt-1 whitespace-nowrap">Certified Experts</div>
           </div>
         </div>
         <span className="h-8 w-[1px] bg-gray-200" />
