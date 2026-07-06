@@ -23,9 +23,9 @@ export default function Services() {
         <SectionDecorations />
         <Container>
           <SectionTitle
-            subtitle="Clinical Services"
-            title="Choose Your Area of Care"
-            description="Each service focuses on one health condition with personalized meal plans and ongoing expert guidance."
+            subtitle="Our Services"
+            title="Corporate Wellness Programs"
+            description="Each category focuses on one dimension of employee wellbeing, delivered through expert-led sessions, workshops, and challenges."
           />
           <motion.div
             variants={staggerContainer}
@@ -67,10 +67,10 @@ export default function Services() {
                 Free Consultation
               </span>
               <h3 className="text-2xl md:text-3xl font-bold text-dark mb-3">
-                Not Sure Which Service Is Right for You?
+                Not Sure Which Program Is Right for Your Team?
               </h3>
               <p className="text-muted text-sm md:text-base leading-relaxed max-w-lg">
-                Book a free consultation and our experts will recommend the best clinical nutrition plan for your health goals.
+                Book a free consultation and our experts will recommend the best wellness program for your organization's goals.
               </p>
             </div>
             <Link

@@ -64,10 +64,10 @@ export default function ContactSection() {
                 Get in Touch
               </span>
               <h2 className="text-3xl md:text-[38px] font-serif font-medium text-[#0e261a] leading-tight mb-4">
-                Let&apos;s Start Your Journey
+                Let&apos;s Build a Healthier Workplace
               </h2>
               <p className="text-muted text-sm leading-relaxed">
-                Whether you have a question about programs, pricing, or anything else — our team is ready to answer.
+                Whether you have a question about wellness programs, packages, or pricing — our team is ready to answer.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function ContactSection() {
                 </div>
               </div>
               <Button
-                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I'd like to know more about your health programs.`}
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi, I'd like to know more about your corporate wellness programs.`}
                 variant="secondary"
                 fullWidth
                 className="font-bold"
@@ -126,10 +126,10 @@ export default function ContactSection() {
             <div className="bg-white rounded-[24px] p-8 md:p-10 border border-[#E2E8E4]/60 shadow-sm hover:shadow-xl hover:shadow-secondary/10 transition-shadow duration-500">
               <div className="mb-8">
                 <span className="inline-block text-[11px] font-extrabold uppercase tracking-widest text-[#72A93B] bg-[#E8F2EA] rounded-full px-4 py-2 mb-4">
-                  Contact Form
+                  Inquiry Form
                 </span>
-                <h3 className="text-2xl font-bold text-dark">Send Us a Message</h3>
-                <p className="text-muted text-sm mt-2">Fill out the form and we&apos;ll get back to you within 24 hours.</p>
+                <h3 className="text-2xl font-bold text-dark">Submit Your Inquiry</h3>
+                <p className="text-muted text-sm mt-2">Fill out the form and our wellness consultant will get back to you within 24 hours.</p>
               </div>
               <ContactForm />
             </div>

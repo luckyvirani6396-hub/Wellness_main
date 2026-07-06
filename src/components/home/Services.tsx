@@ -47,9 +47,9 @@ export default function Services() {
 
       <Container>
         <SectionTitle
-          subtitle="Clinical Services"
-          title="Care For Your Health Condition"
-          description="Targeted nutrition support for specific health concerns — choose the area you need expert help with."
+          subtitle="Our Services"
+          title="Corporate Wellness Programs"
+          description="Comprehensive wellness solutions organized by category — explore the programs that fit your workforce."
         />
         <motion.div
           variants={staggerContainer}
@@ -76,7 +76,7 @@ export default function Services() {
           className="text-center mt-8"
         >
           <Button to="/services" variant="outline" size="lg">
-            View All Clinical Services
+            View All Wellness Services
           </Button>
         </motion.div>
       </Container>

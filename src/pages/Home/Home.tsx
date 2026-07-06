@@ -4,7 +4,9 @@ import Hero from '../../components/home/Hero';
 import OurApproach from '../../components/home/OurApproach';
 import AboutPreview from '../../components/home/AboutPreview';
 import Services from '../../components/home/Services';
-// import HowItWorks from '../../components/home/HowItWorks';
+import HowItWorks from '../../components/home/HowItWorks';
+import Industries from '../../components/home/Industries';
+import CTA from '../../components/home/CTA';
 import Programs from '../../components/home/Programs';
 import Testimonials from '../../components/home/Testimonials';
 import BlogPreview from '../../components/home/BlogPreview';
@@ -63,8 +65,9 @@ export default function Home() {
       <OurApproach />
       <AboutPreview />
       <Services />
+      <Industries />
+      <HowItWorks />
       <Programs />
-      {/* <HowItWorks /> */}
       <Testimonials />
       <BlogPreview />
       <section className="py-14 md:py-18 relative overflow-hidden z-10">
@@ -250,7 +253,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      {/* <CTA /> */}
+      <CTA />
     </>
   );
 }

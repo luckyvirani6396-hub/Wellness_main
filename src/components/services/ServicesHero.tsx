@@ -37,19 +37,19 @@ export default function ServicesHero() {
             </motion.div>
 
             <motion.h2 variants={fadeUp} initial="hidden" animate="visible" className="text-xl md:text-2xl font-bold text-[#5c8730] mb-4 leading-snug">
-              Expert Care for Every Health Condition.
+              Wellness Programs for Every Workforce.
             </motion.h2>
 
             <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium">
-              Personalized nutrition support tailored to your specific health concern — from PCOS and diabetes to thyroid, heart health, and more.
+              Comprehensive corporate wellness services — from physical fitness and mental wellbeing to nutrition, financial wellness, and more.
             </motion.p>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="relative flex items-start justify-between w-full max-w-[340px] sm:max-w-[420px] mb-10 px-2">
               <div className="absolute top-7 left-12 right-12 sm:top-8 sm:left-14 sm:right-14 h-[1.8px] bg-[#5C8730]/65 z-0" />
               {[
-                { key: 'clinical', icon: Stethoscope, label: <>Clinical<br />Nutrition</> },
-                { key: 'meal', icon: Utensils, label: <>Custom<br />Meal Plans</> },
-                { key: 'care', icon: HeartPulse, label: <>Ongoing<br />Care</> },
+                { key: 'expert', icon: Stethoscope, label: <>Expert-Led<br />Sessions</> },
+                { key: 'custom', icon: Utensils, label: <>Customized<br />Programs</> },
+                { key: 'care', icon: HeartPulse, label: <>Ongoing<br />Support</> },
               ].map(({ key, icon: Icon, label }) => (
                 <div key={key} className="flex flex-col items-center z-10 w-24 sm:w-28">
                   <div className="w-14 h-14 sm:w-16 sm:h-16 bg-[#EAF2E1] rounded-full flex items-center justify-center text-[#496b26] shadow-lg transition-all duration-300 hover:scale-105 hover:bg-[#E2ECD8] shadow-[0_4px_12px_rgba(92,135,48,0.06)]">
@@ -99,10 +99,10 @@ export default function ServicesHero() {
           className="mt-5 lg:mt-2 translate-y-0 lg:translate-y-12 bg-white/95 backdrop-blur-md shadow-xl border border-white/50 rounded-[10px] p-6 lg:p-8.5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 w-full z-20 md:divide-x md:divide-gray-150"
         >
           {[
-            { icon: Stethoscope, title: 'Condition-Specific', desc: 'Targeted plans for your health concern.' },
-            { icon: Utensils, title: 'Meal Planning', desc: 'Custom nutrition built around you.' },
-            { icon: HeartPulse, title: 'Health Monitoring', desc: 'Track progress with expert reviews.' },
-            { icon: Leaf, title: 'Holistic Support', desc: 'Lifestyle guidance beyond just diet.' },
+            { icon: Stethoscope, title: 'Expert-Led', desc: 'Certified wellness professionals.' },
+            { icon: Utensils, title: 'Customized', desc: 'Programs built around your teams.' },
+            { icon: HeartPulse, title: 'Measurable', desc: 'Track engagement and outcomes.' },
+            { icon: Leaf, title: 'Flexible', desc: 'Onsite, virtual, or hybrid delivery.' },
           ].map(({ icon: Icon, title, desc }, i) => (
             <div key={title} className={`flex items-center gap-4.5 px-2 ${i > 0 ? 'md:pl-6' : ''}`}>
               <div className="w-12 h-12 rounded-full bg-[#5c8730]/10 flex items-center justify-center shrink-0 text-[#5c8730]">

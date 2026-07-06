@@ -73,11 +73,11 @@ export default function ContactHero() {
             </motion.div>
 
             <motion.h2 variants={fadeUp} initial="hidden" animate="visible" className="text-xl md:text-2xl font-bold text-[#5c8730] mb-4 leading-snug">
-              We&apos;re Here to Help You Thrive.
+              Let&apos;s Build a Healthier Workplace Together.
             </motion.h2>
 
             <motion.p variants={fadeUp} initial="hidden" animate="visible" className="text-[#2c4033] text-sm md:text-[15.5px] leading-relaxed max-w-xl mb-8 font-medium">
-              Ready to start your health journey? Reach out for a free consultation, program details, or any questions — our team responds within 24 hours.
+              Ready to invest in your employees? Schedule a consultation and let our team design a wellness strategy tailored to your organization.
             </motion.p>
 
             <motion.div variants={fadeUp} initial="hidden" animate="visible" className="relative flex items-start justify-between w-full max-w-[340px] sm:max-w-[420px] mb-10 px-2">
@@ -101,7 +101,7 @@ export default function ContactHero() {
                 href="#contact-form"
                 className="px-7 py-3.5 rounded-full bg-[#5c8730] hover:bg-[#496b26] text-white font-bold text-sm transition-all duration-300 inline-flex items-center gap-2 shadow-md shadow-[#5c8730]/10 hover:scale-[1.02]"
               >
-                <span>Send a Message</span>
+                <span>Submit an Inquiry</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>

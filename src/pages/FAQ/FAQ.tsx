@@ -13,28 +13,24 @@ interface FAQItem {
 
 const FAQ_ITEMS: FAQItem[] = [
   {
-    question: 'What health and nutrition programs do you offer?',
-    answer: 'We provide specialized clinical nutrition programs for weight loss, weight gain, PCOS balance, diabetes management, hypothyroidism care, cholesterol management, hypertension support, and women & child health.',
+    question: 'Can programs be customized?',
+    answer: 'Yes. Every organization has different goals, and we tailor programs accordingly.',
   },
   {
-    question: 'Are your meal plans customized for my lifestyle?',
-    answer: 'Yes, absolutely. All meal and health plans are engineered around your unique metabolic rate, dietary preferences (vegetarian, vegan, gluten-free, etc.), daily schedule, and specific health goals. We believe in sustainable lifestyle habits, not restrictive diets.',
+    question: 'Do you offer virtual sessions?',
+    answer: 'Yes. We provide onsite, virtual, and hybrid wellness programs.',
   },
   {
-    question: 'How do I start and what is the process?',
-    answer: 'Starting is easy. You can book an initial consultation online. We will perform a complete health audit, review your medical history and lifestyle, and design a customized multi-week transformation journey with clear milestones.',
+    question: 'How many employees can participate?',
+    answer: 'Our programs scale from small teams to enterprise organizations with thousands of employees.',
   },
   {
-    question: 'Do you offer daily tracking and coaching support?',
-    answer: 'Yes! Our structured programs include weekly/bi-weekly coaching check-ins along with daily habit tracking, WhatsApp messaging support, and quick dietary adjustments to keep you on track throughout the week.',
+    question: 'Can we combine different wellness services?',
+    answer: 'Absolutely. We create customized wellness calendars that include multiple services throughout the year.',
   },
   {
-    question: 'Can I manage clinical conditions like thyroid or diabetes?',
-    answer: 'Yes. Our clinical nutritionists are specialized in managing hormonal imbalances (PCOS, thyroid) and metabolic conditions (diabetes, lipid profile, blood pressure) through targeted dietary and lifestyle interventions, working in harmony with your medical treatments.',
-  },
-  {
-    question: 'What is your cancellation and rescheduling policy?',
-    answer: 'We require a 24-hour notice to reschedule or cancel coaching sessions. This allows us to offer the slot to another client on the waiting list. Thank you for respecting our coaches and clients time.',
+    question: 'How long are the sessions?',
+    answer: 'Programs typically range from 30 to 90 minutes, depending on the activity and objectives.',
   },
 ];
 
@@ -49,9 +45,9 @@ export default function FAQ() {
     <>
       <PageHero
         title="FAQ"
-        description="Have questions about our programs, consulting, or nutritional plans? Find clear answers here."
+        description="Have questions about our corporate wellness programs, packages, or delivery options? Find clear answers here."
         image="/images/services-hero.png"
-        imageAlt="Frequently asked questions about health"
+        imageAlt="Frequently asked questions about corporate wellness"
       />
 
       <section className="py-14 md:py-18 bg-white relative overflow-hidden z-10">
@@ -106,7 +102,7 @@ export default function FAQ() {
             <div className="mt-14 p-8 rounded-3xl bg-[#E8F2EA]/50 border border-[#E2E8E4]/60 text-center max-w-xl mx-auto">
               <h3 className="text-xl font-bold text-dark mb-2">Still have questions?</h3>
               <p className="text-sm text-[#5F6B6E] mb-6">
-                Our support team and nutritionists are here to guide you. Drop us a line and we will get back to you shortly.
+                Our wellness consultants are here to guide you. Drop us a line and we will get back to you shortly.
               </p>
               <Button to="/contact" variant="primary">
                 Contact Us
